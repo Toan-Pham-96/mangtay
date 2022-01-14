@@ -13,8 +13,13 @@ $(document).ready(function() {
 
   //TOGGLE
 
-  $(".navbar-nav li a:after").click(function(){
-    $(".navbar-nav li .menu-hidden").toggle();
+
+ 
+  $(document).on("click", function (e) { 
+    const hasParent = $(e.target).parents('.nav-menu').length > 0
+    if (!hasParent) {
+      $("menu").prop(remove.this)
+    }
   });
 
 
@@ -106,48 +111,77 @@ $('.case-slide').slick({
 });
 
 
-// SPITLING
-    // Cắt chữ bằng Splitting.js, mỗi chữ cái sẽ nằm trong 
-// thẻ span với class="char"
-new Splitting({ target: ".chozui"});
+// // SPITLING
+//     // Cắt chữ bằng Splitting.js, mỗi chữ cái sẽ nằm trong 
+// // thẻ span với class="char"
+// new Splitting({ target: ".chozui"});
 
-// Tạo hiệu ứng chữ chuyển động bằng anime.js 
-anime({
-	targets: ".chozui .tdt",
-	duration: 750,
-	translateY: ["1.1em", 0],
-	translateX: ["0.5em", 0],
-	rotateZ: [180, 0],
-	opacity: [0, 1],
-	easing: "easeOutExpo",
-	delay: (el, i) => 50 * i,
-	loop: true
-})
+// // Tạo hiệu ứng chữ chuyển động bằng anime.js 
+// anime({
+// 	targets: ".chozui .tdt",
+// 	duration: 750,
+// 	translateY: ["1.1em", 0],
+// 	translateX: ["0.5em", 0],
+// 	rotateZ: [180, 0],
+// 	opacity: [0, 1],
+// 	easing: "easeOutExpo",
+// 	delay: (el, i) => 50 * i,
+// 	loop: true
+// })
 
 
 
-//ANIME.JS
-// Wrap every letter in a span
-var textWrapper = document.querySelector('.ml2');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+// //ANIME.JS
+// // Wrap every letter in a span
+// var textWrapper = document.querySelector('.ml2');
+// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml2 .letter',
-    scale: [4,1],
-    opacity: [0,1],
-    translateZ: 0,
-    easing: "easeOutExpo",
-    duration: 950,
-    delay: (el, i) => 70*i
-  }).add({
-    targets: '.ml2',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
+// anime.timeline({loop: true})
+//   .add({
+//     targets: '.ml2 .letter',
+//     scale: [4,1],
+//     opacity: [0,1],
+//     translateZ: 0,
+//     easing: "easeOutExpo",
+//     duration: 950,
+//     delay: (el, i) => 70*i
+//   }).add({
+//     targets: '.ml2',
+//     opacity: 0,
+//     duration: 1000,
+//     easing: "easeOutExpo",
+//     delay: 1000
+//   });
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var accorlist = this.nextElementSibling;
+    if (accorlist.style.maxHeight) {
+      accorlist.style.maxHeight = null;
+    } else {
+      accorlist.style.maxHeight = accorlist.scrollHeight + "px";
+    } 
   });
+}
 
+// $(".navbar-nav > li").click(function(e) {
+//   e.preventDefault();
+//   e.stopPropagation()
+
+//   $(this).toggleClass('active')
+
+//   $(".navbar-nav > li").not(this).removeClass('active')
+
+// })
+
+// $(document).on("click", function(e) {
+//   $(".navbar-nav > li").removeClass('active')
+// })
 
 
 

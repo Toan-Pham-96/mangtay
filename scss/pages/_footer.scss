@@ -119,18 +119,43 @@
 }
 
 @include Responsive(PHONE){
-    .footer-wrapper .footer-main .collapse:not(.show){
-        display: none !important;
+    .footer-main{
+        .accordion {
+            background-color: transparent;
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            transition:  all 0.4s ease;
+            -webkit-transition:  all 0.4s ease;
+            -moz-transition:  all 0.4s ease;
+            -ms-transition:  all 0.4s ease;
+            -o-transition:  all 0.4s ease;
+        }
+          .active, .accordion:hover {
+            background-color: transparent;
+          }
+          
+          .accordion:after {
+            content: '\002B';
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+          }
+          
+          .active:after {
+            content: "\2212";
+          }
+          
+          .accorlist {
+            padding: 0 1rem;
+            background-color:transparent;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+          }
     }
-    .footer-wrapper .footer-copyright__inner-img{
-        text-align: center;
-    }
-
 }
 
-@include Responsive(IPAD){ 
 
-}
-
-@include Responsive(IPADPRO){
-}
