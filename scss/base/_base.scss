@@ -7,24 +7,20 @@
 }
 
 .wrapper-body{
-    overflow-x: hidden;
-
+    overflow: hidden;
 }
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
     box-sizing: border-box;
     font-family: $font-primary;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: $c-primary;
     font-weight: 300;
     position: relative;
-
-   
 }
 ul{
     list-style: none;

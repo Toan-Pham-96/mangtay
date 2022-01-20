@@ -1,7 +1,8 @@
 //RESPONSIVE
+$DESKTOP:     1024px;   
 $IPADPRO:     1366px;   
-$IPAD:     1024px;  
-$PHONE:    768px;   
+$IPAD:     1023px;  
+$PHONE:    767px;   
 
 @mixin Responsive($canvas) {
     @if $canvas == PHONE{
@@ -13,4 +14,7 @@ $PHONE:    768px;
     @else if $canvas == IPADPRO {
      @media only screen and (max-width: $IPADPRO) { @content; } 
     }
+    @else if $canvas == DESKTOP {
+      @media only screen and (min-width: $DESKTOP) { @content; } 
+     }
   }

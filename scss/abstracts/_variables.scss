@@ -4,27 +4,30 @@ $c-green-down: #4E7A6C;
 $c-green-up: #00473C;
 $c-black: #333333;
 $c-pink: #f91e1e;
-$c-grey: #bfbfbf;
 $c-grey-up: #F8F8F8;
 $c-grey-upper: #E6E6E6;
 $c-white: #fff;
 
+
 //THE NEW GYM
+$c-grey: #eff3f7;
 $c-green: rgb(52, 195, 143);
 $c-blue: #2a3042;
 $c-orange: rgb(241, 180, 76);
+$c-red: red;
 
 //AL
 
 $c-active: #C4A053;
 $c-primary: #171717;
-$c-default: #556ee6;
+$c-default: #032340;
+
 
 .c-primary{
-    color: $c-default;
+    color: $c-primary;
 }
 .c-default{
-    color: $c-primary;
+    color: $c-default;
 }
 .c-active{
     color: $c-active;
@@ -60,8 +63,14 @@ $c-default: #556ee6;
 .c-grey{
     color: $c-grey;
 }
+.c-red{
+    color: $c-red;
+}
 //BACKGROUND
 
+.bg-red{
+    background: $c-red;
+}
 .bg-black{
     background-color: $c-black;
 }
@@ -261,32 +270,35 @@ $font-default: 'Open Sans', sans-serif;
 $font-awesome: "FontAwesome";
 
 .fm-heading-1{
-    font-size: 48px;
+    font-size: 6.6rem;
     font-family: $font-default;
+    font-weight: normal;
 }
 .fm-heading-2{
-    font-size: 32px;
+    font-size: 3.2rem;
     font-family: $font-default;
     line-height: 4.4rem;
+    font-weight: normal;
 
 }
 .fm-heading-3{
-    font-size: 18px;
+    font-size: 1.8rem;
     font-family: $font-default;
     line-height: 2.8rem;
-
+    font-weight: normal;
 
 }
 .fm-heading-4{
-    font-size: 18px;
+    font-size: 1.8rem;
     font-family: $font-default;
     line-height: 2.8rem;
-
+    font-weight: normal;
 
 }
 .fm-heading-5{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: $font-default;
     line-height: 2.8rem;
+    font-weight: normal;
 
 }

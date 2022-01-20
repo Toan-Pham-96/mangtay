@@ -11,8 +11,47 @@ $(document).ready(function() {
     $(".toggle-menu").removeClass('active');
   });
 
+  $(".heading-wrapper .nav-menu ul li a").click(function(){
+    $(".heading-main").find(".nav-menu").removeClass("open");
+    $(".heading-main").find(".toggle-menu").removeClass("active");
+  });
+
   //TOGGLE
 
+
+
+$(".nav-menu ul li").click(function(e){
+
+  // e.preventDefault();
+  // e.stopPropagation();
+
+  if(window.innerWidth < 1024){
+    const menuHidden = $(this).find(".menu-hidden")
+
+    if(menuHidden.hasClass('test-ul')){
+        $(this).find(".menu-hidden").toggleClass("test-ul");
+        $(this).find("a").toggleClass("a-transform");
+    }
+     else {
+        $(".menu-hidden").removeClass("test-ul");
+        $("a").removeClass("a-transform");
+        $(this).find(".menu-hidden").toggleClass("test-ul");
+        $(this).find("a").toggleClass("a-transform");
+    }
+
+  }
+
+
+
+})
+
+  $(".nav-menu ul li").hover(function(){
+    window.innerWidth >= 1024 && $(this).find('.menu-hidden').toggleClass("test-ul");
+    },
+    function(){
+      window.innerWidth >= 1024 && $(this).find('.menu-hidden').toggleClass("test-ul");
+    }
+);
 
  
   $(document).on("click", function (e) { 
@@ -40,32 +79,31 @@ $(document).ready(function() {
   });
 
   
-    //SLIDE BANNER
-    $('.banner-img__slide').slick({
-        autoplay: true,
-        autoplaySpeed: 3500,
-        slidesToScroll: 1,
-        slidesToShow: 1,
-        lazyLoad: 'ondemand',
-        nextArrow: false,
-        prevArrow: false,
-        speed: 1500,
-        asNavFor: '.banner-content__slide'
+    // //SLIDE BANNER
+    // $('.banner-img__slide').slick({
+    //     autoplay: true,
+    //     autoplaySpeed: 3500,
+    //     slidesToScroll: 1,
+    //     slidesToShow: 1,
+    //     lazyLoad: 'ondemand',
+    //     nextArrow: false,
+    //     prevArrow: false,
+    //     speed: 1500,
+    //     asNavFor: '.banner-content__slide'
 
-    });
-
-      //SLIDE BANNER
-      $('.banner-content__slide').slick({
-        autoplay: true,
-        autoplaySpeed: 3500,
-        speed: 1500,
-        slidesToScroll: 1,
-        slidesToShow: 1,
-        lazyLoad: 'ondemand',
-        nextArrow: false,
-        prevArrow: false,
-        asNavFor: '.banner-img__slide',
-    });
+    // });
+    //   //SLIDE BANNER
+    //   $('.banner-content__slide').slick({
+    //     autoplay: true,
+    //     autoplaySpeed: 3500,
+    //     speed: 1500,
+    //     slidesToScroll: 1,
+    //     slidesToShow: 1,
+    //     lazyLoad: 'ondemand',
+    //     nextArrow: false,
+    //     prevArrow: false,
+    //     asNavFor: '.banner-img__slide',
+    // });
     
 //SLIDE PARTNER
 $('.partner-slide-1').slick({
@@ -100,11 +138,24 @@ $('.case-slide').slick({
   nextArrow: $(".btn-next"),
 });
 
+$('.cover-item').slick({
+  autoplay: true,
+  autoplaySpeed: 3000,
+  slidesToScroll: 1,
+  slidesToShow: 1,
+  lazyLoad: 'ondemand',
+  speed: 1800,
+  fade: true,
+  nextArrow: false,
+  prevArrow: false,
+  cssEase: 'linear',
+});
+
     // AOS
     AOS.init({
       once: false,
-      duration: 1200,
-      delay: 100,
+      duration: 800,
+      delay: 200,
 
     });
 
@@ -169,20 +220,22 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// $(".navbar-nav > li").click(function(e) {
-//   e.preventDefault();
-//   e.stopPropagation()
+   $('a[href*=\\#]').on('click', function(event) {
+        event.preventDefault();
+        $('html,body').animate({
+            scrollTop: $(this.hash).offset().top - 100
+        }, 500);
+    });
 
-//   $(this).toggleClass('active')
-
-//   $(".navbar-nav > li").not(this).removeClass('active')
-
-// })
-
-// $(document).on("click", function(e) {
-//   $(".navbar-nav > li").removeClass('active')
-// })
-
+    //EXIT
+    
+    $(document).on("click", function (e) { 
+      const hasParent = $(e.target).parents('.heading-main').length > 0
+      if (!hasParent) {
+        $(".heading-main").find(".toggle-menu").removeClass("active");
+        $(".heading-main").find(".nav-menu").removeClass("open");
+      }
+    });
 
 
 

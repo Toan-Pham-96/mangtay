@@ -43,6 +43,15 @@
         li {
           position: relative;
           padding: 1rem 2rem;
+          & > .a-transform{
+            &:not(:only-child):after {
+              transform: rotate(-180deg);
+              -webkit-transform: rotate(-180deg);
+              -moz-transform: rotate(-180deg);
+              -ms-transform: rotate(-180deg);
+              -o-transform: rotate(-180deg);
+            }
+          }
           & > a {
             color: #fff;
             position: relative;
@@ -96,7 +105,11 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            border-radius: 10px;
+            border-radius: 1px;
+            -webkit-border-radius: 1px;
+            -moz-border-radius: 1px;
+            -ms-border-radius: 1px;
+            -o-border-radius: 1px;
             transform: translateY(120%);
             -webkit-transform: translateY(120%);
             -moz-transform: translateY(120%);
@@ -106,22 +119,31 @@
             -moz-transition: all 0.4s ease-in-out;
             -ms-transition: all 0.4s ease-in-out;
             -o-transition: all 0.4s ease-in-out;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            -ms-border-radius: 10px;
-            -o-border-radius: 10px;
+            
+            @include Responsive (IPAD){
+              position: static;
+              max-height: 0;
+              visibility: visible;
+              transform: translateY(0);
+              -webkit-transform: translateY(0);
+              -moz-transform: translateY(0);
+              -ms-transform: translateY(0);
+              -o-transform: translateY(0);
+}
+            
             li {
-              border-radius: 5px;
+              border-radius: 1px;
               padding: 5px 0;
               -webkit-transition: all 0.4s ease-in-out;
               -moz-transition: all 0.4s ease-in-out;
               -ms-transition: all 0.4s ease-in-out;
               -o-transition: all 0.4s ease-in-out;
-              -webkit-border-radius: 5px;
-              -moz-border-radius: 5px;
-              -ms-border-radius: 5px;
-              -o-border-radius: 5px;
-              a {
+              -webkit-border-radius: 1px;
+              -moz-border-radius: 1px;
+              -ms-border-radius: 1px;
+              -o-border-radius: 1px;
+              a
+{
                 display: flex;
                 align-items: center;
                 color: $c-primary;
@@ -159,35 +181,19 @@
               &::before {
                 width: 100%;
               }
-              &:not(:only-child) {
-                &:after {
-                  transform: rotate(-180deg);
-                  -webkit-transform: rotate(-180deg);
-                  -moz-transform: rotate(-180deg);
-                  -ms-transform: rotate(-180deg);
-                  -o-transform: rotate(-180deg);
+              @include Responsive (DESKTOP){
+                &:not(:only-child) {
+                  &:after {
+                    transform: rotate(-180deg);
+                    -webkit-transform: rotate(-180deg);
+                    -moz-transform: rotate(-180deg);
+                    -ms-transform: rotate(-180deg);
+                    -o-transform: rotate(-180deg);
+                  }
                 }
               }
-              
             }
-         
-            & > ul {
-              opacity: 1;
-              visibility: visible;
-              transform: translateY(calc(100% + 1rem));
-              -webkit-transform: translateY(calc(100% + 1rem));
-              -moz-transform: translateY(calc(100% + 1rem));
-              -ms-transform: translateY(calc(100% + 1rem));
-              -o-transform: translateY(calc(100% + 1rem));
-              @include Responsive (IPAD){
-                position: static;
-                transform: translateY(0);
-                -webkit-transform: translateY(0);
-                -moz-transform: translateY(0);
-                -ms-transform: translateY(0);
-                -o-transform: translateY(0);
-}
-            }
+          
           }
         }
       }
@@ -212,6 +218,12 @@
           visibility: visible;
         }
       }
+    }
+    @include Responsive(PHONE){
+      #menu{
+        width: 100%;
+      }
+
     }
     // Hamburger menu toggler stuff below
     .toggle-menu {
@@ -293,6 +305,7 @@
 }
 
 .sticky {
+  position: fixed;
   background: $c-default;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
@@ -308,3 +321,21 @@
 
 
 
+.test-ul{
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(calc(100% + 1rem)) !important;
+  -webkit-transform: translateY(calc(100% + 1rem)) !important;
+  -moz-transform: translateY(calc(100% + 1rem)) !important;
+  -ms-transform: translateY(calc(100% + 1rem)) !important;
+  -o-transform: translateY(calc(100% + 1rem)) !important;
+
+  @include Responsive (IPAD){
+    max-height: 50rem !important;
+    transform: translateY(0) !important;
+    -webkit-transform: translateY(0) !important;
+    -moz-transform: translateY(0) !important;
+    -ms-transform: translateY(0) !important;
+    -o-transform: translateY(0) !important;
+}
+}

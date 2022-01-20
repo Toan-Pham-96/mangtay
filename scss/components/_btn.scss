@@ -1,21 +1,22 @@
 .btn-customer{
     display: inline-flex;
     align-items: center;
-   min-height: 4rem;
+     min-height: 4rem;
    @include Responsive (IPAD){
        display: none;
    }
     a{
         display: inline-flex;
-        padding: 1.2rem 3rem;
-        border-radius: 2rem;
-        -webkit-border-radius: 2rem;
-        -moz-border-radius: 2rem;
-        -ms-border-radius: 2rem;
-        -o-border-radius: 2rem;
+        padding: 1rem 2.5rem;
+        border-radius: 1px;
+        -webkit-border-radius: 1px;
+        -moz-border-radius: 1px;
+        -ms-border-radius: 1px;
+        -o-border-radius: 1px;
         text-decoration: none;
         position: relative;
-        span{
+        span
+{
             z-index: 2;
         }
         &:after{
@@ -26,11 +27,11 @@
             background: $c-orange;
             height: 0;
             width: 0;
-            border-radius: 2rem;
-            -webkit-border-radius: 2rem;
-            -moz-border-radius: 2rem;
-            -ms-border-radius: 2rem;
-            -o-border-radius: 2rem;
+            border-radius: 1px;
+            -webkit-border-radius: 1px;
+            -moz-border-radius: 1px;
+            -ms-border-radius: 1px;
+            -o-border-radius: 1px;
             z-index: 1;
             transform: translate(0, -50%);
             transition: all 0.3s ease;
@@ -68,19 +69,20 @@
      min-height: 4rem;
     a{
         background: #fff;
-        padding: 1.2rem 3rem;
-        border-radius: 2rem;
-        -webkit-border-radius: 2rem;
-        -moz-border-radius: 2rem;
-        -ms-border-radius: 2rem;
-        -o-border-radius: 2rem;
+        padding: 1rem 2.5rem;
+        border-radius: 1px;
+        -webkit-border-radius: 1px;
+        -moz-border-radius: 1px;
+        -ms-border-radius: 1px;
+        -o-border-radius: 1px;
         text-decoration: none;
         transition: all 0.3s ease;
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
         -ms-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
-        span{
+        span
+{
             transition: all 0.1s ease;
             -webkit-transition: all 0.1s ease;
             -moz-transition: all 0.1s ease;
@@ -99,12 +101,12 @@
     align-items: center;
     min-height: 3rem;
     a{
-        padding:5px 3.5rem;
-        border-radius: 2rem;
-        -webkit-border-radius: 2rem;
-        -moz-border-radius: 2rem;
-        -ms-border-radius: 2rem;
-        -o-border-radius: 2rem;
+        padding:10px 3rem;
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
         text-decoration: none;
         border: 1px solid $c-default;
         transition: all 0.3s ease;
@@ -112,7 +114,8 @@
         -moz-transition: all 0.3s ease;
         -ms-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
-        &:hover{
+        &:hover
+{
             background: $c-orange;
             border-color: $c-orange;
             span{
@@ -185,4 +188,26 @@
        
     }
 
+}
+
+.btn-modal{
+    background: #fff;
+    font-size: 1.4rem;
+    padding: 1rem 2.5rem;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    &:hover
+{
+      background: $c-orange;
+      box-shadow: rgba(0, 0, 0, 0.8) 0px 4px 12px;
+      color: #fff;
+    }
 }
