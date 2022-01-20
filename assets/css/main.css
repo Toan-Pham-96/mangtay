@@ -1298,9 +1298,14 @@ ul {
     font-weight: bold;
     color: #34c38f; }
 
+.site-content .content-main__wrapper .item-sub {
+  line-height: 1.2; }
+
 .site-content .content-main__wrapper .accordion .accordion-item {
   border: none;
   background: transparent; }
+  .site-content .content-main__wrapper .accordion .accordion-item .accordion-body {
+    text-align: justify; }
   .site-content .content-main__wrapper .accordion .accordion-item button {
     font-size: 1.7rem;
     color: #f1b44c;

@@ -311,10 +311,16 @@
 .site-content{
   .content-main{
     &__wrapper{
+      .item-sub{
+        line-height: 1.2;
+      }
       .accordion{
         .accordion-item{
           border: none;
           background: transparent;
+          .accordion-body{
+            text-align: justify;
+          }
           button{
             font-size: 1.7rem;
             color: $c-orange;
