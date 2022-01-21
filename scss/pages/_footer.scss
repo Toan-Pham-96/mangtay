@@ -20,19 +20,20 @@
                 }
             }
             .info-social{
-                margin-top: 12px;
+                margin-top: 1.2rem;
                 ul{
                     display: flex;
                     li{
                         a{
                             border: 1px solid #fff;
-                            padding: 7px 8px;
+                            height: 3rem;
+                            width: 3rem;
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             i{
                                 margin-top: 2px;
-                                font-size: 18px;
+                                font-size: 1.9rem;
                             }
                         }
                         .fb{

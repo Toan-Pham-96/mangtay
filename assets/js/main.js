@@ -1,5 +1,7 @@
         
 $(document).ready(function() {
+
+
   //MENU
   $('.toggle-menu').click(function () {
     $(this).toggleClass('active');
@@ -18,6 +20,10 @@ $(document).ready(function() {
 
   //TOGGLE
 
+$('#form-modal').submit( function(e) {
+  e.preventDefault()
+  }
+)
 
 
 $(".nav-menu ul li").click(function(e){
@@ -114,6 +120,15 @@ $('.partner-slide-1').slick({
   lazyLoad: 'ondemand',
   speed: 2100,
   asNavFor: '.partner-slide-2',
+  responsive: [
+    
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 3,
+      }
+    }
+  ]
 
 });
 $('.partner-slide-2').slick({
@@ -126,6 +141,14 @@ $('.partner-slide-2').slick({
   asNavFor: '.partner-slide-1',
   dots: true,
   appendDots: $('.dots-custom'),
+  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 3,
+      }
+    }
+  ]
 });
 $('.case-slide').slick({
   autoplay: true,
@@ -136,6 +159,14 @@ $('.case-slide').slick({
   speed: 1800,
   prevArrow: $(".btn-prev"),
   nextArrow: $(".btn-next"),
+  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
 });
 
 $('.cover-item').slick({

@@ -17,12 +17,19 @@
     left: 0;
     background: linear-gradient(150deg ,rgba($c-default, 0.85) ,$c-default);
     clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%);
+    @include Responsive(PHONE){
+      clip-path: none;
+    }
+    
   }
 
   
   &__wrapper {
     margin-top: 10rem;
     padding: 5rem 0;
+    @include Responsive(PHONE){
+      margin-top: 8rem;
+    }
   }
   .banner-content {
     padding: 2rem;
@@ -36,7 +43,7 @@
         -o-transition: all 0.8s ease;
         .fm-heading-1{
           font-weight: 600;
-          line-height: 1;
+          line-height: 1.2;
           span{
             font-size: 4.2rem;
           font-weight: 300;
@@ -53,7 +60,16 @@
             text-overflow: ellipsis;
           }
         }
+        @include Responsive(PHONE){
+          .fm-heading-1{
+           
+            span{
+              font-size: 1.8rem;
+            }
+          }
+        
 
+        }
       }
     }
   }
@@ -141,13 +157,21 @@
     -moz-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
-    &:hover
-{
+    @include Responsive(PHONE){
+      box-shadow: none;
+      padding: 1.2rem 1.2rem 2rem;
+      &:hover{
+        box-shadow: inherit;
+      }
+
+    }
+    &:hover{
       box-shadow: 1rem 1rem rgba($c-default, 0.5);
     }
     figure {
       padding: 1.5rem;
     }
+
     .content {
       p {
         display: -webkit-box;
@@ -174,6 +198,9 @@
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+  @include Responsive(PHONE){
+    width: 40%;
+  }
 }
 .site-partner {
   .partner-slide__item {
@@ -311,49 +338,60 @@
 .site-content{
   .content-main{
     &__wrapper{
-      .item-sub{
-        line-height: 1.2;
-      }
-      .accordion{
-        .accordion-item{
-          border: none;
-          background: transparent;
-          .accordion-body{
-            text-align: justify;
-          }
-          button{
-            font-size: 1.7rem;
-            color: $c-orange;
-            background: transparent;
-            &::after{
-              display: none;
-            }
-            &:not(.collapsed) {
-              background: transparent;
-              color: $c-default;
-              box-shadow: none;
-              svg{
-                fill: $c-default;
-              }
-            }
-            &:focus{
-              border: none;
-              box-shadow: none;
-            }
-            svg{
-              max-height: 16px;
-              max-width: 14px;
-              margin-right: 8px;
-              fill: $c-orange;
-              transition: all 0.3s ease;
-              -webkit-transition: all 0.3s ease;
-              -moz-transition: all 0.3s ease;
-              -ms-transition: all 0.3s ease;
-              -o-transition: all 0.3s ease;
-}
+      .main-item{
+        .fm-heading-2{
+          font-size: 24px;
+          font-weight: 600;
+        }
+        .item-sub{
+          line-height: 1.2;
+          @include Responsive(PHONE){
+            font-size: 20px;
           }
         }
+        .accordion{
+          .accordion-item{
+            border: none;
+            background: transparent;
+            .accordion-body{
+              text-align: justify;
+            }
+            button{
+              font-size: 1.7rem;
+              color: $c-orange;
+              background: transparent;
+              &::after{
+                display: none;
+              }
+              &:not(.collapsed) {
+                background: transparent;
+                color: $c-default;
+                box-shadow: none;
+                svg{
+                  fill: $c-default;
+                }
+              }
+              &:focus{
+                border: none;
+                box-shadow: none;
+              }
+              svg{
+                max-height: 16px;
+                max-width: 14px;
+                margin-right: 8px;
+                fill: $c-orange;
+                transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+  }
+            }
+          }
+        }
+
       }
+     
     }
   }
 

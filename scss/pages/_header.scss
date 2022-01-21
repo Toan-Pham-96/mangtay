@@ -40,6 +40,9 @@
       ul{
         display: flex;
         align-items: center;
+        @include Responsive(IPAD){
+          align-items: flex-start;
+        }
         li {
           position: relative;
           padding: 1rem 2rem;
@@ -142,8 +145,7 @@
               -moz-border-radius: 1px;
               -ms-border-radius: 1px;
               -o-border-radius: 1px;
-              a
-{
+              a{
                 display: flex;
                 align-items: center;
                 color: $c-primary;
@@ -204,26 +206,31 @@
         background: $c-black;
         height: 100vh;
         width: 50vw;
-        right: -10%;
-        opacity: 0;
+        right: -100%;
         overflow: hidden;
         position: fixed;
         visibility: hidden;
         top: 0;
-        transition: all 0.7s ease-in-out;
-        &.open {
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        &.open{
           margin-left: 0;
-          right: 0;
-          opacity: 1;
+          right: -2%;
           visibility: visible;
         }
       }
     }
     @include Responsive(PHONE){
       #menu{
-        width: 100%;
+        width: 75vw;
+        padding-top: 60px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 20px;
       }
-
     }
     // Hamburger menu toggler stuff below
     .toggle-menu {
@@ -296,12 +303,90 @@
       }
     }
   }
-  .btn-customer {
-    a {
-      background: $c-white;
-      color: $c-default;
+
+  .nav-cover{
+    display: flex;
+    .nav-language{
+      margin-left: 1.4rem;
+      display: flex;
+      align-items: center;
+      @include Responsive(PHONE){
+        margin-left: 2rem;
+      }
+      img{
+        width: 1.8rem;
+      }
+      ul{
+        & > li{
+          position: relative;
+          
+          &:hover{
+            .language-hidden{
+              opacity: 1;
+              visibility: visible;
+              transform: translateY(100%);
+              -webkit-transform: translateY(100%);
+              -moz-transform: translateY(100%);
+              -ms-transform: translateY(100%);
+              -o-transform: translateY(100%);
+            }
+          }
+        }
+        li{
+          a{
+            display: flex;
+            color: #fff;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fff;
+            padding: 6px 18px;
+            font-size: 1.2rem;
+            min-height: 3.6rem;
+            border-radius: 1px;
+            -webkit-border-radius: 1px;
+            -moz-border-radius: 1px;
+            -ms-border-radius: 1px;
+            -o-border-radius: 1px;
+            img{
+              margin-right: 4px;
+            }
+            @include Responsive(PHONE){
+              min-height: 3rem;
+            }
+            
+          }
+        }
+        .language-hidden{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          visibility: hidden;
+          opacity: 0;
+          transform: translateY(150%);
+          -webkit-transform: translateY(150%);
+          -moz-transform: translateY(150%);
+          -ms-transform: translateY(150%);
+          -o-transform: translateY(150%);
+          transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          -ms-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          a{
+            background: $c-default;
+          }
+        }
+      }
+    }
+    .btn-customer {
+      a {
+        background: $c-white;
+        color: $c-default;
+      }
     }
   }
+ 
 }
 
 .sticky {
@@ -314,6 +399,9 @@
   -o-transition: all 0.4s ease;
   padding: 5px 1rem;
   box-shadow: 1px 2px 10px 0 rgba(#000, 0.2);
+  @include Responsive(PHONE){
+    padding: 0;
+  }
 }
 
 

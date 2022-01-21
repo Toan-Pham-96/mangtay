@@ -1,13 +1,14 @@
 .btn-customer{
     display: inline-flex;
     align-items: center;
-     min-height: 4rem;
+     min-height: 3.6rem;
+     padding: 0;
    @include Responsive (IPAD){
        display: none;
    }
     a{
         display: inline-flex;
-        padding: 1rem 2.5rem;
+        padding: 9px 2.5rem;
         border-radius: 1px;
         -webkit-border-radius: 1px;
         -moz-border-radius: 1px;
@@ -15,8 +16,8 @@
         -o-border-radius: 1px;
         text-decoration: none;
         position: relative;
-        span
-{
+        span{
+            font-size: 12px;
             z-index: 2;
         }
         &:after{
@@ -101,7 +102,7 @@
     align-items: center;
     min-height: 3rem;
     a{
-        padding:10px 3rem;
+        padding: 10px 3rem;
         border-radius: 2px;
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
@@ -114,8 +115,7 @@
         -moz-transition: all 0.3s ease;
         -ms-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
-        &:hover
-{
+        &:hover{
             background: $c-orange;
             border-color: $c-orange;
             span{
@@ -132,7 +132,12 @@
             -o-transition: all 0.3s ease;
         }
     }
-
+    @include Responsive (PHONE){
+        min-height: 2rem;
+        a{
+            padding: 5px 2rem;
+        }
+    }
 }
 .see-more{
     display: inline-flex;
