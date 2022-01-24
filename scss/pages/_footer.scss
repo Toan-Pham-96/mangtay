@@ -12,7 +12,13 @@
                 margin-bottom: 2rem;
             }
             figure{
-                img{max-width: 12rem;}
+                img{
+                    max-width: 12rem;
+                    @include Responsive (PHONE){
+                        max-width: 8rem;
+                    }
+                }
+               
             }
             .info-item{
                 ul{

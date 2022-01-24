@@ -20,7 +20,7 @@
     }
     .navbar-brand {
       img {
-        max-height: 5rem;
+        max-height: 6rem;
       }
     }
 
@@ -410,6 +410,11 @@
     img{
       -webkit-animation: rotate-center 1.8s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
       animation: rotate-center 1.8s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      max-height: 5rem !important;
 }
 
   }
