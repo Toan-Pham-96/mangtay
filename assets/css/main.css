@@ -1846,7 +1846,8 @@ ul {
 .footer-wrapper {
   background-color: #032340;
   font-family: "Raleway", sans-serif;
-  color: #fff; }
+  color: #fff;
+  border-top: 1px solid #e3e3e9; }
   .footer-wrapper a {
     color: #fff; }
   @media only screen and (max-width: 767px) {
