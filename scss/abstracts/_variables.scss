@@ -273,6 +273,9 @@ $font-awesome: "FontAwesome";
     font-size: 6.6rem;
     font-family: $font-default;
     font-weight: normal;
+    @include Responsive(IPADPRO){
+        font-size: 5.6rem;
+    }
     @include Responsive(PHONE){
         font-size: 3.6rem;
     }

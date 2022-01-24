@@ -56,7 +56,10 @@
           line-height: 1.2;
           span{
             font-size: 4.2rem;
-          font-weight: 300;
+            font-weight: 300;
+            @include Responsive(IPADPRO){
+              font-size: 3.2rem;
+            }
           }
         }
         .description {
@@ -162,9 +165,9 @@
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
     text-align: center;
-    border: 1px solid #f3f0f0;
+    border: 1px solid rgba($c-default, 0.1);
     padding: 1.6rem 1.6rem 4rem;
-    box-shadow: 0 2rem 4rem rgba($c-default, 0.3);
+    box-shadow: rgba($c-default, 0.19) 0px 10px 20px, rgba($c-default, 0.23) 0px 6px 6px;
     transition: all 0.4s ease;
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;

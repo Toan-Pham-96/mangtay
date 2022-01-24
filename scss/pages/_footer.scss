@@ -12,15 +12,23 @@
             @include Responsive (PHONE){
                 margin-bottom: 2rem;
             }
-            figure{
-                img{
-                    max-width: 12rem;
-                    @include Responsive (PHONE){
-                        max-width: 8rem;
+            .group-logo {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                figure:nth-child(1){
+                    img{
+                        max-height: 10rem;
                     }
                 }
-               
+                figure:nth-child(2){
+                    img{
+                        max-height: 4rem;
+                    }
+                }
             }
+           
             .info-item{
                 ul{
                     li:not(:last-child){
