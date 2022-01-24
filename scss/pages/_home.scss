@@ -17,16 +17,20 @@
     left: 0;
     background: linear-gradient(150deg ,rgba($c-default, 0.85) ,$c-default);
     clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%);
+    @include Responsive(IPAD){
+      clip-path: none;
+    }
     @include Responsive(PHONE){
       clip-path: none;
     }
     
   }
-
-  
   &__wrapper {
     margin-top: 10rem;
     padding: 5rem 0;
+    @include Responsive(IPAD){
+      margin-top: 5rem;
+    }
     @include Responsive(PHONE){
       margin-top: 8rem;
     }
@@ -41,6 +45,12 @@
         -moz-transition: all 0.8s ease;
         -ms-transition: all 0.8s ease;
         -o-transition: all 0.8s ease;
+        @include Responsive(IPAD){
+          text-align: center;
+        }
+        @include Responsive(PHONE){
+          text-align: center;
+        }
         .fm-heading-1{
           font-weight: 600;
           line-height: 1.2;
@@ -58,17 +68,17 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
+            @include Responsive(PHONE){
+              font-size: 1.4rem;
+            }
           }
         }
         @include Responsive(PHONE){
           .fm-heading-1{
-           
             span{
               font-size: 1.8rem;
             }
           }
-        
-
         }
       }
     }
@@ -78,6 +88,9 @@
     figure{
       img{
         margin-left: 10px;
+        @include Responsive(IPAD){
+          padding: 0 1.4rem;
+        }
       }
     }
     &__slide{
@@ -157,13 +170,18 @@
     -moz-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
+    @include Responsive(IPADPRO){
+      margin-bottom: 2rem;
+    }
+    @include Responsive(IPAD){
+      margin-bottom: 2rem;
+    }
     @include Responsive(PHONE){
       box-shadow: none;
       padding: 1.2rem 1.2rem 2rem;
       &:hover{
         box-shadow: inherit;
       }
-
     }
     &:hover{
       box-shadow: 1rem 1rem rgba($c-default, 0.5);
@@ -244,11 +262,6 @@
     font-size: 4.8rem;
     cursor: pointer;
     border: 1px solid $c-default;
-    // border-radius: 50%;
-    // -webkit-border-radius: 50%;
-    // -moz-border-radius: 50%;
-    // -ms-border-radius: 50%;
-    // -o-border-radius: 50%;
     width: 5rem;
     height: 5rem;
     display: flex;
@@ -260,6 +273,9 @@
     }
     &:hover{
       background: $c-orange;
+    }
+    @include Responsive (PHONE){
+      display: none !important;
     }
 }
   .btn-next {
@@ -275,11 +291,6 @@
     font-size: 4.8rem;
     cursor: pointer;
     border: 1px solid $c-default;
-    // border-radius: 50%;
-    // -webkit-border-radius: 50%;
-    // -moz-border-radius: 50%;
-    // -ms-border-radius: 50%;
-    // -o-border-radius: 50%;
     width: 5rem;
     height: 5rem;
     display: flex;
@@ -293,14 +304,18 @@
     &:hover{
       background: $c-orange;
     }
+    @include Responsive (PHONE){
+      display: none !important;
+    }
 }
   .case-slide {
     z-index: 1;
     padding: 0 4rem;
+    @include Responsive (PHONE){
+      padding: 0 2rem;
+    }
     .case-item {
       margin: 0 1rem;
-    
-
     }
   }
   .line{
@@ -342,11 +357,19 @@
         .fm-heading-2{
           font-size: 24px;
           font-weight: 600;
+          
+          @include Responsive(PHONE){
+            text-align: center;
+          }
         }
         .item-sub{
           line-height: 1.2;
+          @include Responsive(IPAD){
+            font-size: 20px;
+          }
           @include Responsive(PHONE){
             font-size: 20px;
+            text-align: center;
           }
         }
         .accordion{
@@ -452,6 +475,9 @@
         width: 2.4rem;
         margin-right: 10px;
         margin-top: 2px;
+        @include Responsive (PHONE){
+          width: 3.6rem;
+        }
       }
       button[type=submit]{
        width: 90%;

@@ -1,6 +1,5 @@
 .footer-wrapper{
     background-color: $c-default;
-   
     font-family: $font-primary;
     color: #fff;
     a{
@@ -9,8 +8,11 @@
     }
     .footer-main{
         &__info{
+            @include Responsive (PHONE){
+                margin-bottom: 2rem;
+            }
             figure{
-                max-width: 32rem;
+                img{max-width: 12rem;}
             }
             .info-item{
                 ul{
@@ -75,13 +77,40 @@
             }
         }
         .footer-sub{
+            @include Responsive (PHONE){
+                .gg-partner{
+                    margin-bottom: 2rem;
+                }
+            }
+            
             .qr-code{
                 figure{
                     img{
                         max-width: 12.4rem;
                     }
                 }
+                @include Responsive (PHONE){
+                    span{
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
                 ul{
+                    @include Responsive (PHONE){
+                        display: flex;
+                        justify-content: center;
+                        
+                        li:not(:last-child){
+                            margin-right: 20px;
+                            
+                        
+                        }
+                        li{
+                            a{
+                                font-size: 16px;
+                            }
+                        }
+                    }
                     li{
                         margin: 5px 0;
                         a{
@@ -97,13 +126,25 @@
     }
     .footer-copyright{
         border-top: 1px solid #e3e3e9;
+        @include Responsive (PHONE){
+            text-align: center;
+        }
         p{
             margin-bottom: 0;
         }
         ul{
+           justify-content: flex-end;
             display: flex;
+            @include Responsive (PHONE){
+                justify-content: center;
+                margin-top: 1.4rem;
+            }
             li:not(:last-child){
-                margin-right: 12px;
+                &:after {
+                    content: "|";
+                    margin-left: 9px;
+                    margin-right: 10px;
+                }
             }
             a{
                 &:hover{
@@ -114,7 +155,7 @@
                 -moz-transition: all 0.3s ease;
                 -ms-transition: all 0.3s ease;
                 -o-transition: all 0.3s ease;
-}
+            }
         }
     }
 }
