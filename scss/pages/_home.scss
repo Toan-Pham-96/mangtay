@@ -15,7 +15,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(150deg ,rgba($c-default, 0.85) ,$c-default);
+    background: linear-gradient(150deg ,rgba($c-default, 1) ,$c-default);
     clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%);
     @include Responsive(IPAD){
       clip-path: none;
@@ -61,7 +61,7 @@
             font-size: 4rem;
             font-weight: 300;
             @include Responsive(IPADPRO){
-              font-size: 3.2rem;
+              font-size: 3rem;
             }
           }
         }

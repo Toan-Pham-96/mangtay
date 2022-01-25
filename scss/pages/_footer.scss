@@ -30,6 +30,7 @@
             }
            
             .info-item{
+              
                 ul{
                     li:not(:last-child){
                         margin-bottom: 1.2rem;
@@ -38,6 +39,7 @@
             }
             .info-social{
                 margin-top: 1.2rem;
+                
                 ul{
                     display: flex;
                     li{
@@ -49,15 +51,14 @@
                             align-items: center;
                             justify-content: center;
                             i{
-                                margin-top: 2px;
                                 font-size: 1.9rem;
                             }
                         }
                         .fb{
                             background: #104f94;
                         }
-                        .tw{
-                            background: #1da1f2;
+                        .ig{
+                            background: #c32969;
                         }
                         .utube{
                             background: #c30000;
@@ -77,7 +78,6 @@
                         margin-bottom: 1.2rem;
                     }
                     a{
-                        
                         &:hover{
                             color: $c-orange;
                         }
@@ -92,14 +92,40 @@
             }
         }
         .footer-sub{
-            @include Responsive (PHONE){
-                .gg-partner{
+            .gg-partner{
+                
+                @include Responsive (IPADPRO){
                     margin-bottom: 2rem;
+                    span{
+                        br{
+                            display: none;
+                        }
+                    }
                 }
+                @include Responsive (IPAD){
+                    margin-bottom: 2rem;
+                    span{
+                        br{
+                            display: none;
+                        }
+                    }
+                }
+                @include Responsive (PHONE){
+                    margin-bottom: 2rem;
+                    span{
+                        br{
+                            display: none;
+                        }
+                    }
+                }
+                
+
             }
+           
             
             .qr-code{
                 figure{
+                    margin-bottom: 0;
                     img{
                         max-width: 12.4rem;
                     }
@@ -111,26 +137,25 @@
                     }
                 }
                 ul{
+                    display: flex;
+                    margin-top: 1rem;
+                    li:not(:last-child){
+                        margin-right: 16px;
+                    }
                     @include Responsive (PHONE){
                         display: flex;
                         justify-content: center;
-                        
                         li:not(:last-child){
                             margin-right: 20px;
-                            
-                        
-                        }
-                        li{
-                            a{
-                                font-size: 16px;
-                            }
                         }
                     }
                     li{
-                        margin: 5px 0;
                         a{
-                            font-weight: bold;
+                            img{
+                                max-width: 10rem;
+                            }
                         }
+                      
                     }
                 }
             
@@ -140,7 +165,12 @@
         }
     }
     .footer-copyright{
-        border-top: 1px solid #e3e3e9;
+        &__inner{
+            &-content{
+                display: flex;
+                justify-content: center;
+            }
+        }
         @include Responsive (PHONE){
             text-align: center;
         }

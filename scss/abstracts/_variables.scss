@@ -15,12 +15,13 @@ $c-green: rgb(52, 195, 143);
 $c-blue: #2a3042;
 $c-orange: rgb(241, 180, 76);
 $c-red: red;
+$c-default: rgb(30, 56, 83);
 
 //AL
 
 $c-active: #C4A053;
 $c-primary: #171717;
-$c-default: #032340;
+
 
 
 .c-primary{
@@ -265,6 +266,7 @@ $c-default: #032340;
 
 //FONT-FAMILY
 
+// font-family: 'George Rounded';
 $font-primary: 'Raleway', sans-serif;
 $font-default: 'Open Sans', sans-serif;
 $font-awesome: "FontAwesome";
