@@ -20,12 +20,23 @@
                 figure:nth-child(1){
                     img{
                         max-height: 10rem;
+                        
+                    }
+                    @include Responsive (PHONE){
+                       img{
+                        max-height: 7rem;
+                       }
                     }
                 }
                 figure:nth-child(2){
                     img{
                         max-height: 4rem;
                     }
+                    @include Responsive (PHONE){
+                        img{
+                         max-height: 3rem;
+                        }
+                     }
                 }
             }
            

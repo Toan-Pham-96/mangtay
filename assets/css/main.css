@@ -1900,8 +1900,14 @@ ul {
     align-items: center; }
     .footer-wrapper .footer-main__info .group-logo figure:nth-child(1) img {
       max-height: 10rem; }
+    @media only screen and (max-width: 767px) {
+      .footer-wrapper .footer-main__info .group-logo figure:nth-child(1) img {
+        max-height: 7rem; } }
     .footer-wrapper .footer-main__info .group-logo figure:nth-child(2) img {
       max-height: 4rem; }
+    @media only screen and (max-width: 767px) {
+      .footer-wrapper .footer-main__info .group-logo figure:nth-child(2) img {
+        max-height: 3rem; } }
   .footer-wrapper .footer-main__info .info-item ul li:not(:last-child) {
     margin-bottom: 1.2rem; }
   .footer-wrapper .footer-main__info .info-social {
