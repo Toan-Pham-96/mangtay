@@ -1931,15 +1931,15 @@ ul {
         background: #c30000; }
       .footer-wrapper .footer-main__info .info-social ul li:not(:last-child) {
         margin-right: 10px; }
-  .footer-wrapper .footer-main__map .map-item ul li:not(:last-child) {
+  .footer-wrapper .footer-main__map .site-map ul li:not(:last-child) {
     margin-bottom: 1.2rem; }
-  .footer-wrapper .footer-main__map .map-item ul a {
+  .footer-wrapper .footer-main__map .site-map ul a {
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease; }
-    .footer-wrapper .footer-main__map .map-item ul a:hover {
+    .footer-wrapper .footer-main__map .site-map ul a:hover {
       color: #f1b44c; }
   @media only screen and (max-width: 1366px) {
     .footer-wrapper .footer-main .footer-sub .gg-partner {
