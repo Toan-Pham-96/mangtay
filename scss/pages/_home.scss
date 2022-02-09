@@ -1,9 +1,11 @@
-
+.wrapper-body{
+  position: relative;
+  top: -1px;
+}
 //ORDER
 
 //SITE BANNER
 .site-banner {
-  min-height: 25vh;
   width: 100vw;
   overflow: hidden;
   display: flex;
@@ -26,8 +28,7 @@
     
   }
   &__wrapper {
-    margin-top: 10rem;
-    padding: 5rem 0;
+    padding: 3rem 0;
     @include Responsive(IPAD){
       margin-top: 5rem;
     }
@@ -66,7 +67,7 @@
           }
         }
         .description {
-          p {
+          .fm-heading-2  {
             font-size: 1.8rem;
             line-height: 2.8rem;
             display: -webkit-box;
@@ -113,8 +114,6 @@
         -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
-       
-
         a{
           margin-bottom: 15px;
           text-decoration: none;
@@ -512,5 +511,68 @@
        }
     }
     }
+  }
+}
+
+
+//wrapper fucntion
+.wrapper-function{
+  .site-banner{
+      margin-bottom: 5vh;
+      min-height: 35vw;
+      @include Responsive(IPADPRO){
+          margin-bottom: 3rem;
+        }
+        @include Responsive(IPAD){
+          min-height: 38vh !important;
+        }
+        @include Responsive(PHONE){
+          flex-direction: column;
+          min-height: auto;
+          margin-bottom: 0;
+        }
+      &__wrapper{
+          margin-top: 0;
+          .banner-content{
+            @include Responsive(PHONE){
+              padding-left: 1rem;
+              padding-right: 1rem;
+            }
+              .item-slide {
+                  &__wrapper {
+                    color: $c-default;
+                    @include Responsive(IPAD){
+                      text-align: left;
+                      .fm-heading-1{
+                        font-size: 2.8rem;
+                      }
+                    }
+                    @include Responsive(PHONE){
+                      text-align: center;
+                    }
+                    .fm-heading-1{
+                      font-size: 4.8rem;
+                      line-height: 1.2;
+                      font-weight: bold;
+                      @include Responsive(IPAD){
+                        font-size: 2.8rem !important;
+                      }
+                    }
+                    .description {
+                        margin-top: 1rem;
+                      .fm-heading-2 {
+                          font-size: 1.6rem;
+                          font-weight: 300;
+                          @include Responsive(IPAD){
+                            font-size: 1.8rem !important;
+                            line-height: 1.5;
+                          }
+                      }
+                    }
+                  
+                  }
+                }
+          }
+      }
   }
 }

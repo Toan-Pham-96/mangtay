@@ -102,116 +102,17 @@
                 
             }
         }
-        .footer-sub{
-            .gg-partner{
-                
-                @include Responsive (IPADPRO){
-                    margin-bottom: 2rem;
-                    span{
-                        br{
-                            display: none;
-                        }
-                    }
-                }
-                @include Responsive (IPAD){
-                    margin-bottom: 2rem;
-                    span{
-                        br{
-                            display: none;
-                        }
-                    }
-                }
-                @include Responsive (PHONE){
-                    margin-bottom: 2rem;
-                    span{
-                        br{
-                            display: none;
-                        }
-                    }
-                }
-                
-
-            }
-           
-            
-            .qr-code{
-                figure{
-                    margin-bottom: 0;
-                    img{
-                        max-width: 12.4rem;
-                    }
-                }
-                @include Responsive (PHONE){
-                    span{
-                        display: flex;
-                        justify-content: center;
-                    }
-                }
-                ul{
-                    display: flex;
-                    margin-top: 1rem;
-                    li:not(:last-child){
-                        margin-right: 16px;
-                    }
-                    @include Responsive (PHONE){
-                        display: flex;
-                        justify-content: center;
-                        li:not(:last-child){
-                            margin-right: 20px;
-                        }
-                    }
-                    li{
-                        a{
-                            img{
-                                max-width: 10rem;
-                            }
-                        }
-                      
-                    }
-                }
-            
-            }
-        
-
-        }
     }
     .footer-copyright{
         &__inner{
-            &-content{
-                display: flex;
-                justify-content: center;
-            }
+            display: flex;
+            justify-content: center;
         }
         @include Responsive (PHONE){
             text-align: center;
         }
         p{
             margin-bottom: 0;
-        }
-        ul{
-           justify-content: flex-end;
-            display: flex;
-            @include Responsive (PHONE){
-                justify-content: center;
-                margin-top: 1.4rem;
-            }
-            li:not(:last-child){
-                &:after {
-                    content: "|";
-                    margin-left: 9px;
-                    margin-right: 10px;
-                }
-            }
-            a{
-                &:hover{
-                    color: $c-orange;
-                }
-                transition: all 0.3s ease;
-                -webkit-transition: all 0.3s ease;
-                -moz-transition: all 0.3s ease;
-                -ms-transition: all 0.3s ease;
-                -o-transition: all 0.3s ease;
-            }
         }
     }
 }
