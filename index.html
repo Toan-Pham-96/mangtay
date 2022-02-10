@@ -32,6 +32,16 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
   </head>
   <body>
+
+    <!-- LOADDER -->
+    <div id="loader-wrapper">
+      <div id="loader">
+        <img src="./assets/images/LOGO-DESIGN-WHITE-03.png" class="img-fluid" alt=""/>
+        <img src="./assets/images/LOGO-DESIGN_text-03.png" class="img-fluid" alt=""/>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+  </div>
     <!-- MENU SITE -->
     <header class="heading-main">
       <div class="container">
@@ -213,72 +223,427 @@
         </div>
       </div>
     </header>
-    <div class="wrapper-body">
-      <!-- BANNER -->
-      <section class="site-banner">
-        <div class="site-banner-cover"></div>
-        <div class="container">
-          <div class="site-banner__wrapper">
-            <div class="row d-flex justify-content-center">
-              <div class="col-md-12">
-                <div class="row d-flex align-items-center">
-                  <div
-                    class="col-lg-6 order-2 order-lg-1"
-                    data-aos="fade-right"
-                  >
-                    <div class="banner-content">
-                      <div class="banner-content__slide">
-                        <div class="item-slide">
-                          <div class="item-slide__wrapper">
-                            <h1 class="fm-heading-1">
-                              <span> Phần mềm quản lý phòng tập gym </span>
-                              <br />
-                              thông minh và tiện lợi
-                            </h1>
-                            <div class="description mt-4">
-                              <div class="fm-heading-2">
-                                Phần mềm quản lý thành viên phòng tập tất cả
-                                trong một hệ thống dành cho các phòng tập thể
-                                dục và câu lạc bộ sức khỏe ở mọi quy mô.
-                              </div>
+    <div id="content">
+      <div class="wrapper-body" >
+        <!-- BANNER -->
+        <section class="site-banner">
+          <div class="site-banner-cover"></div>
+          <div class="container">
+            <div class="site-banner__wrapper">
+              <div class="row d-flex align-items-center">
+                <div
+                  class="col-lg-6 order-2 order-lg-1"
+                  data-aos="fade-right"
+                >
+                  <div class="banner-content">
+                    <div class="banner-content__slide">
+                      <div class="item-slide">
+                        <div class="item-slide__wrapper">
+                          <h1 class="fm-heading-1">
+                            <span> Phần mềm quản lý phòng tập gym </span>
+                            <br />
+                            thông minh và tiện lợi
+                          </h1>
+                          <div class="description mt-4">
+                            <div class="fm-heading-2">
+                              Phần mềm quản lý thành viên phòng tập tất cả
+                              trong một hệ thống dành cho các phòng tập thể
+                              dục và câu lạc bộ sức khỏe ở mọi quy mô.
                             </div>
-                            <div class="mt-5 pb-4">
-                              <button
-                                type="button"
-                                class="btn btn-modal"
-                                data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop"
-                              >
-                                Đăng ký ngay
-                              </button>
-                            </div>
+                          </div>
+                          <div class="mt-5 pb-4">
+                            <button
+                              type="button"
+                              class="btn btn-modal"
+                              data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop"
+                            >
+                              Đăng ký ngay
+                            </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
-                    <div class="banner-img">
-                      <div class="banner-img__slide">
-                        <div class="play-cover">
-                          <a
-                            href="https://www.youtube.com/watch?v=jqK2Vy8VQTQ"
-                            class="fresco"
-                            data-fresco-options="
-                              width: 900,
-                              height: 550,
-                              youtube: { autoplay: 1 }"
-                          >
-                            <i class="fa fa-play" aria-hidden="true"></i>
-                          </a>
-                        </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2" >
+                  <div class="banner-img">
+                    <div class="banner-img__slide">
+                      <div class="play-cover">
+                        <a
+                          href="https://www.youtube.com/watch?v=jqK2Vy8VQTQ"
+                          class="fresco"
+                          data-fresco-options="
+                            width: 900,
+                            height: 550,
+                            youtube: { autoplay: 1 }"
+                        >
+                          <i class="fa fa-play" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <figure>
+                        <img
+                          src="./assets/images/homepage-desktop.png"
+                          class="img-fluid"
+                          alt="trang chủ Gym Vison"
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SITE PARTNER -->
+        <!-- <section class="site-partner mt-md-5 mt-4 py-4" data-aos="fade-up">
+            <div class="container">
+              <div class="site-partner__wrapper">
+                <div class="text-center">
+                  <h2 class="fm-heading-2 c-default">
+                    Hơn 500+ doanh nghiệp đã sở hữu Gym Vision
+                  </h2>
+                  <span class="sub-title fs-16 mt-3">
+                    Để xây dựng chương trình khách hàng trung thành, hiệu quả, tiết
+                    kiệm
+                  </span>
+                  <div class="line my-4"></div>
+                </div>
+                <div class="partner-slide-1 mt-md-5 pt-md-4 pt-0 mt-4">
+                  <div class="partner-slide__item">
+                    <figure>
+                      <a href="#">
+                        <img
+                          src="./assets/images/group-3319.jpeg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="partner-slide__item">
+                    <figure>
+                      <a href="#">
+                        <img
+                          src="./assets/images/group-3319.jpeg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="partner-slide__item">
+                    <figure>
+                      <a href="#">
+                        <img
+                          src="./assets/images/group-3319.jpeg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="partner-slide__item">
+                    <figure>
+                      <a href="#">
+                        <img
+                          src="./assets/images/group-3319.jpeg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="partner-slide__item">
+                    <figure>
+                      <a href="#">
+                        <img
+                          src="./assets/images/group-3319.jpeg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="partner-slide__item">
+                    <figure>
+                      <a href="#">
+                        <img
+                          src="./assets/images/group-3319.jpeg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+                <div class="partner-slide-2 mt-md-5 pt-md-4 pt-0 mt-4">
+                  <div class="partner-slide__item">
+                    <figure>
+                      <a href="#">
+                        <img
+                          src="./assets/images/group-3319.jpeg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="partner-slide__item">
+                    <figure>
+                      <a href="#">
+                        <img
+                          src="./assets/images/group-3319.jpeg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="partner-slide__item">
+                    <figure>
+                      <a href="#">
+                        <img
+                          src="./assets/images/group-3319.jpeg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="partner-slide__item">
+                    <figure>
+                      <a href="#">
+                        <img
+                          src="./assets/images/group-3319.jpeg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="partner-slide__item">
+                    <figure>
+                      <a href="#">
+                        <img
+                          src="./assets/images/group-3319.jpeg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="partner-slide__item">
+                    <figure>
+                      <a href="#">
+                        <img
+                          src="./assets/images/group-3319.jpeg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+                <div class="dots-custom">
+                </div>
+              </div>
+            </div>
+          </section> -->
+  
+        <!-- SECTION DEMO -->
+        <section class="site-content my-md-5 my-4">
+          <div class="container">
+            <div class="section-content__wrapper py-md-5 py-4">
+              <div class="row gx-md-5 d-flex align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                  <div class="content-cover">
+                    <div class="content-cover__wrapper">
+                      <div class="cover-item">
                         <figure>
                           <img
-                            src="./assets/images/homepage-desktop.png"
+                            src="./assets/images/img-test.webp"
                             class="img-fluid"
-                            alt="trang chủ Gym Vison"
+                            alt="Tính năng Gym Vison"
                           />
                         </figure>
+                        <figure>
+                          <img
+                            src="./assets/images/bg-test.webp"
+                            class="img-fluid"
+                            alt="Tính năng Gym Vison"
+                          />
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                  <div class="content-main p-lg-5 p-4 m-xl-5">
+                    <div class="content-main__wrapper">
+                      <div class="main-item">
+                        <h2 class="fm-heading-2 c-default">Sự tự phục vụ</h2>
+                        <p class="fs-28 mt-md-4 mt-3 pt-2 item-sub">
+                          Trao quyền kiểm soát cho thành viên câu lạc bộ với giải
+                          pháp phần mềm thể dục cao cấp cho việc tự phục vụ
+                        </p>
+                        <div
+                          class="accordion mt-md-4 mt-4 ms-md-3"
+                          id="accordionFlushExample"
+                        >
+                          <div class="accordion-item">
+                            <button
+                              id="flush-headingOne"
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseOne"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseOne"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="46.973"
+                                height="46.98"
+                                viewBox="0 0 46.973 46.98"
+                                class="pg-icon pg-acc_item-title-text-icon"
+                              >
+                                <path
+                                  data-name="Path 816"
+                                  d="M2.417 46.98A2.447 2.447 0 010 44.655V38.305v-.061-.074a1.458 1.458 0 01.112-.56 2.348 2.348 0 01.518-.91l4.58-5.05a2.554 2.554 0 011.83-.82h12.045v-2.937H4.4a4.408 4.408 0 01-4.4-4.4V4.4A4.41 4.41 0 014.4 0h35.238a4.408 4.408 0 014.4 4.4v19.089a4.408 4.408 0 01-4.4 4.4 1.468 1.468 0 010-2.936 1.469 1.469 0 001.468-1.468V4.4a1.469 1.469 0 00-1.468-1.468H4.4A1.47 1.47 0 002.936 4.4v19.089A1.469 1.469 0 004.4 24.957h16.153a1.469 1.469 0 011.468 1.468V32.3a1.469 1.469 0 01-1.468 1.47H7.256L4.594 36.7h8.619a1.468 1.468 0 010 2.936H2.936v4.4h10.277a1.468 1.468 0 010 2.936H2.5a.6.6 0 01-.083.008z"
+                                ></path>
+                                <path
+                                  data-name="Path 817"
+                                  d="M15.047 23.489a1.469 1.469 0 01-1.468-1.468v-.693a5.853 5.853 0 01-3.337-2.149 1.468 1.468 0 012.337-1.775 2.9 2.9 0 002.289 1.135h.121c1.519 0 2.631-.824 2.631-1.562s-1.1-1.558-2.57-1.558c-3.036 0-5.5-2.018-5.5-4.5 0-2.059 1.662-3.8 4.036-4.332v-.715a1.468 1.468 0 112.936 0v.695a5.824 5.824 0 013.331 2.147 1.467 1.467 0 11-2.335 1.778 2.9 2.9 0 00-2.295-1.138h-.117c-1.517 0-2.627.826-2.627 1.562s1.1 1.562 2.568 1.562c3.036 0 5.506 2.016 5.506 4.494 0 2.059-1.664 3.8-4.038 4.332v.714a1.468 1.468 0 01-1.468 1.471z"
+                                ></path>
+                                <path
+                                  data-name="Path 818"
+                                  d="M45.287 46.978q-.065 0-.129-.006a1.469 1.469 0 01-1.335-1.593l.2-2.2a4.416 4.416 0 00-3.429-4.7l-7.147-1.588a1.459 1.459 0 01-1.149-1.433V24.305a2.588 2.588 0 00-2.353-2.253 2.227 2.227 0 00-2.049 2.186v17.991a1.468 1.468 0 01-2.349 1.175l-2.9-2.169a1.534 1.534 0 00-2.145.307 1.542 1.542 0 000 1.838l.928 1.235a1.468 1.468 0 01-2.347 1.764l-.93-1.237a4.468 4.468 0 013.58-7.149 4.423 4.423 0 012.674.891l.542.407V24.219a5.165 5.165 0 014.927-5.107H30.017a5.506 5.506 0 015.2 4.956 1.341 1.341 0 01.008.151v10.059l6 1.335a7.357 7.357 0 015.722 7.834l-.2 2.194a1.457 1.457 0 01-1.46 1.337z"
+                                ></path>
+                              </svg>
+                              Đặt chỗ và đăng ký trực tuyến
+                            </button>
+                            <div
+                              id="flush-collapseOne"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="flush-headingOne"
+                              data-bs-parent="#accordionFlushExample"
+                            >
+                              <div class="accordion-body">
+                                <p>
+                                  Make online booking convenient for your fitness
+                                  club members. Our Client Portal integrates with
+                                  your website to streamline all personal
+                                  training, fitness facility, and class bookings
+                                  on any device. Members can also manage all
+                                  aspects of their accounts including
+                                  registration, contract renewals, payments, and
+                                  more.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <button
+                              id="flush-headingTwo"
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseTwo"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24.01"
+                                viewBox="0 0 24 24.01"
+                                class="pg-icon pg-acc_item-title-text-icon"
+                              >
+                                <g transform="translate(0 .012)">
+                                  <path
+                                    d="M3.75 24A3.754 3.754 0 010 20.248v-1.5A.75.75 0 01.75 18h.75V8.248A2.252 2.252 0 013.75 6H7.5a.75.75 0 010 1.5H3.75a.751.751 0 00-.75.75V18h6.416a.751.751 0 01.651.378 2.226 2.226 0 003.865 0 .753.753 0 01.651-.378H21v-2.25a.75.75 0 011.5 0V18h.75a.75.75 0 01.75.75v1.5A3.754 3.754 0 0120.25 24zM1.5 20.248A2.252 2.252 0 003.75 22.5h16.5a2.252 2.252 0 002.25-2.25v-.75h-7.512a3.726 3.726 0 01-5.976 0H1.5z"
+                                  ></path>
+                                  <path
+                                    d="M9.013 14.748a.75.75 0 01-.672-1.082L10.25 9.79a7.109 7.109 0 018.6-9.509l.028.007a7.137 7.137 0 11-5.226 13.22L9.213 14.72a.7.7 0 01-.2.028zM16.828 1.49a5.616 5.616 0 00-5.073 8 .748.748 0 01-.006.65l-1.328 2.7 3.116-.851a.755.755 0 01.565.07 5.637 5.637 0 104.377-10.32l-.039-.011a5.593 5.593 0 00-1.612-.238z"
+                                  ></path>
+                                  <path
+                                    d="M14.625 6a1.123 1.123 0 01-.109-2.241.77.77 0 01.109-.009h.077A1.123 1.123 0 0114.625 6z"
+                                  ></path>
+                                  <circle
+                                    cx="1.125"
+                                    cy="1.125"
+                                    r="1.125"
+                                    transform="translate(18 3.748)"
+                                  ></circle>
+                                  <path
+                                    d="M17.049 11.255c-.058 0-.116 0-.174-.005s-.115.005-.172.005a3.228 3.228 0 01-3.2-2.944.75.75 0 01.685-.81h.062a.756.756 0 01.75.686 1.718 1.718 0 001.7 1.569c.041 0 .082 0 .123-.005H17.048a1.721 1.721 0 001.706-1.568.754.754 0 01.746-.683h.063a.75.75 0 01.685.81 3.227 3.227 0 01-3.199 2.945z"
+                                  ></path>
+                                </g>
+                              </svg>
+                              Quầy bán hàng
+                            </button>
+                            <div
+                              id="flush-collapseTwo"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="flush-headingTwo"
+                              data-bs-parent="#accordionFlushExample"
+                            >
+                              <div class="accordion-body">
+                                <p>
+                                  Alleviate pressure on your reception desk with a
+                                  club kiosk capable of handling club membership
+                                  management and registration at your facility. A
+                                  great solution for clubs with 24/7 access
+                                  controls for client acquisition at any time.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <button
+                              id="flush-headingThree"
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseThree"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseThree"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="23.625"
+                                viewBox="0 0 24 23.625"
+                                class="pg-icon pg-acc_item-title-text-icon"
+                              >
+                                <path
+                                  d="M19.5 6.749a3.375 3.375 0 113.375-3.375A3.379 3.379 0 0119.5 6.749zm0-5.25a1.875 1.875 0 101.875 1.875A1.877 1.877 0 0019.5 1.499zM19.5 23.625a3 3 0 01-3-3v-3.128a2.26 2.26 0 01-1.5-2.122v-4.5a3.754 3.754 0 013.75-3.75h1.5a3.754 3.754 0 013.75 3.75v4.5a2.26 2.26 0 01-1.5 2.122v3.128a3 3 0 01-3 3zm-.75-15a2.252 2.252 0 00-2.25 2.25v4.5a.75.75 0 00.75.75.75.75 0 01.75.75v3.75a1.5 1.5 0 003 0v-3.75a.75.75 0 01.75-.75.75.75 0 00.75-.75v-4.5a2.252 2.252 0 00-2.25-2.25zM6 6.749a3.375 3.375 0 113.375-3.375A3.379 3.379 0 016 6.749zm0-5.25a1.875 1.875 0 101.875 1.875A1.877 1.877 0 006 1.499zM6 23.625a3 3 0 01-3-3v-3H.75a.751.751 0 01-.712-.988L1.5 12.253v-1.378a3.754 3.754 0 013.75-3.75h1.5a3.754 3.754 0 013.75 3.75v1.378l1.461 4.384a.749.749 0 01-.711.987H9v3a3 3 0 01-3 3.001zm-2.25-7.5a.75.75 0 01.75.75v3.75a1.5 1.5 0 003 0v-3.75a.75.75 0 01.75-.75h1.959l-1.17-3.513A.732.732 0 019 12.375v-1.5a2.252 2.252 0 00-2.25-2.25h-1.5A2.253 2.253 0 003 10.875v1.5a.742.742 0 01-.039.238L1.79 16.125zM10.637 6.136a.37.37 0 01-.265-.11l-.531-.53a.376.376 0 01-.11-.265.372.372 0 01.11-.265 2.25 2.25 0 000-3.182A.751.751 0 0110.9.722a3.752 3.752 0 010 5.3.374.374 0 01-.263.114z"
+                                ></path>
+                                <path
+                                  d="M15.129 6.246a.743.743 0 01-.53-.22 3.753 3.753 0 010-5.3.75.75 0 111.06 1.06 2.25 2.25 0 000 3.182.751.751 0 01-.53 1.281z"
+                                ></path>
+                              </svg>
+                              Ứng dụng di động
+                            </button>
+                            <div
+                              id="flush-collapseThree"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="flush-headingThree"
+                              data-bs-parent="#accordionFlushExample"
+                            >
+                              <div class="accordion-body">
+                                <p>
+                                  Existing gym members can book classes and refer
+                                  friends or family at any time. Additionally, new
+                                  members can download your gym's mobile app,
+                                  sign-up, or find your other clubs at any time
+                                  with our club finder feature.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -286,1459 +651,1104 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- SITE PARTNER -->
-      <!-- <section class="site-partner mt-md-5 mt-4 py-4" data-aos="fade-up">
+        </section>
+        <section class="site-content my-md-5 my-4">
           <div class="container">
-            <div class="site-partner__wrapper">
+            <div class="section-content__wrapper bg-grey py-md-5 py-4">
+              <div class="row gx-md-5 d-flex align-items-center">
+                <div class="col-md-6 order-1 order-md-2" data-aos="fade-right">
+                  <div class="content-cover">
+                    <div class="content-cover__wrapper">
+                      <div class="cover-item">
+                        <figure>
+                          <img
+                            src="./assets/images/pg-section-increase-club-retention-s.a55793c.jpg"
+                            class="img-fluid"
+                            alt="Phân tích nâng cao"
+                          />
+                        </figure>
+                        <figure>
+                          <img
+                            src="./assets/images/pg-section-increase-operations-s.6173811.jpg"
+                            class="img-fluid"
+                            alt="Phân tích nâng cao"
+                          />
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 order-2 order-md-1" data-aos="fade-left">
+                  <div class="content-main p-lg-5 p-4 m-xl-5">
+                    <div class="content-main__wrapper">
+                      <div class="main-item">
+                        <h2 class="fm-heading-2 c-default">
+                          Tăng tỷ lệ giữ chân khách hàng
+                        </h2>
+                        <p class="fs-28 mt-md-4 mt-3 pt-2 item-sub">
+                          Với phân tích nâng cao và báo cáo của chúng tôi, bạn có
+                          thể tăng tỷ lệ giữ khách tại phòng tập của mình và giữ
+                          cho các thành viên của bạn tập trung vào hiệu suất thể
+                          dục của họ.
+                        </p>
+                        <div
+                          class="accordion mt-md-4 mt-4 ms-md-3"
+                          id="accordionFlushExample2"
+                        >
+                          <div class="accordion-item">
+                            <button
+                              id="flush-headingOne"
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseOnetwo"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseOnetwo"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="46.973"
+                                height="46.98"
+                                viewBox="0 0 46.973 46.98"
+                                class="pg-icon pg-acc_item-title-text-icon"
+                              >
+                                <path
+                                  data-name="Path 816"
+                                  d="M2.417 46.98A2.447 2.447 0 010 44.655V38.305v-.061-.074a1.458 1.458 0 01.112-.56 2.348 2.348 0 01.518-.91l4.58-5.05a2.554 2.554 0 011.83-.82h12.045v-2.937H4.4a4.408 4.408 0 01-4.4-4.4V4.4A4.41 4.41 0 014.4 0h35.238a4.408 4.408 0 014.4 4.4v19.089a4.408 4.408 0 01-4.4 4.4 1.468 1.468 0 010-2.936 1.469 1.469 0 001.468-1.468V4.4a1.469 1.469 0 00-1.468-1.468H4.4A1.47 1.47 0 002.936 4.4v19.089A1.469 1.469 0 004.4 24.957h16.153a1.469 1.469 0 011.468 1.468V32.3a1.469 1.469 0 01-1.468 1.47H7.256L4.594 36.7h8.619a1.468 1.468 0 010 2.936H2.936v4.4h10.277a1.468 1.468 0 010 2.936H2.5a.6.6 0 01-.083.008z"
+                                ></path>
+                                <path
+                                  data-name="Path 817"
+                                  d="M15.047 23.489a1.469 1.469 0 01-1.468-1.468v-.693a5.853 5.853 0 01-3.337-2.149 1.468 1.468 0 012.337-1.775 2.9 2.9 0 002.289 1.135h.121c1.519 0 2.631-.824 2.631-1.562s-1.1-1.558-2.57-1.558c-3.036 0-5.5-2.018-5.5-4.5 0-2.059 1.662-3.8 4.036-4.332v-.715a1.468 1.468 0 112.936 0v.695a5.824 5.824 0 013.331 2.147 1.467 1.467 0 11-2.335 1.778 2.9 2.9 0 00-2.295-1.138h-.117c-1.517 0-2.627.826-2.627 1.562s1.1 1.562 2.568 1.562c3.036 0 5.506 2.016 5.506 4.494 0 2.059-1.664 3.8-4.038 4.332v.714a1.468 1.468 0 01-1.468 1.471z"
+                                ></path>
+                                <path
+                                  data-name="Path 818"
+                                  d="M45.287 46.978q-.065 0-.129-.006a1.469 1.469 0 01-1.335-1.593l.2-2.2a4.416 4.416 0 00-3.429-4.7l-7.147-1.588a1.459 1.459 0 01-1.149-1.433V24.305a2.588 2.588 0 00-2.353-2.253 2.227 2.227 0 00-2.049 2.186v17.991a1.468 1.468 0 01-2.349 1.175l-2.9-2.169a1.534 1.534 0 00-2.145.307 1.542 1.542 0 000 1.838l.928 1.235a1.468 1.468 0 01-2.347 1.764l-.93-1.237a4.468 4.468 0 013.58-7.149 4.423 4.423 0 012.674.891l.542.407V24.219a5.165 5.165 0 014.927-5.107H30.017a5.506 5.506 0 015.2 4.956 1.341 1.341 0 01.008.151v10.059l6 1.335a7.357 7.357 0 015.722 7.834l-.2 2.194a1.457 1.457 0 01-1.46 1.337z"
+                                ></path>
+                              </svg>
+                              Sự thông minh trong việc giữ chân khác hàng
+                            </button>
+                            <div
+                              id="flush-collapseOnetwo"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="flush-headingOnetwo"
+                              data-bs-parent="#accordionFlushExample2"
+                            >
+                              <div class="accordion-body">
+                                <p>
+                                  Make online booking convenient for your fitness
+                                  club members. Our Client Portal integrates with
+                                  your website to streamline all personal
+                                  training, fitness facility, and class bookings
+                                  on any device. Members can also manage all
+                                  aspects of their accounts including
+                                  registration, contract renewals, payments, and
+                                  more.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <button
+                              id="flush-headingTwotwo"
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseTwotwo"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseTwotwo"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24.01"
+                                viewBox="0 0 24 24.01"
+                                class="pg-icon pg-acc_item-title-text-icon"
+                              >
+                                <g transform="translate(0 .012)">
+                                  <path
+                                    d="M3.75 24A3.754 3.754 0 010 20.248v-1.5A.75.75 0 01.75 18h.75V8.248A2.252 2.252 0 013.75 6H7.5a.75.75 0 010 1.5H3.75a.751.751 0 00-.75.75V18h6.416a.751.751 0 01.651.378 2.226 2.226 0 003.865 0 .753.753 0 01.651-.378H21v-2.25a.75.75 0 011.5 0V18h.75a.75.75 0 01.75.75v1.5A3.754 3.754 0 0120.25 24zM1.5 20.248A2.252 2.252 0 003.75 22.5h16.5a2.252 2.252 0 002.25-2.25v-.75h-7.512a3.726 3.726 0 01-5.976 0H1.5z"
+                                  ></path>
+                                  <path
+                                    d="M9.013 14.748a.75.75 0 01-.672-1.082L10.25 9.79a7.109 7.109 0 018.6-9.509l.028.007a7.137 7.137 0 11-5.226 13.22L9.213 14.72a.7.7 0 01-.2.028zM16.828 1.49a5.616 5.616 0 00-5.073 8 .748.748 0 01-.006.65l-1.328 2.7 3.116-.851a.755.755 0 01.565.07 5.637 5.637 0 104.377-10.32l-.039-.011a5.593 5.593 0 00-1.612-.238z"
+                                  ></path>
+                                  <path
+                                    d="M14.625 6a1.123 1.123 0 01-.109-2.241.77.77 0 01.109-.009h.077A1.123 1.123 0 0114.625 6z"
+                                  ></path>
+                                  <circle
+                                    cx="1.125"
+                                    cy="1.125"
+                                    r="1.125"
+                                    transform="translate(18 3.748)"
+                                  ></circle>
+                                  <path
+                                    d="M17.049 11.255c-.058 0-.116 0-.174-.005s-.115.005-.172.005a3.228 3.228 0 01-3.2-2.944.75.75 0 01.685-.81h.062a.756.756 0 01.75.686 1.718 1.718 0 001.7 1.569c.041 0 .082 0 .123-.005H17.048a1.721 1.721 0 001.706-1.568.754.754 0 01.746-.683h.063a.75.75 0 01.685.81 3.227 3.227 0 01-3.199 2.945z"
+                                  ></path>
+                                </g>
+                              </svg>
+                              Thanh toán định kỳ
+                            </button>
+                            <div
+                              id="flush-collapseTwotwo"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="flush-headingTwotwo"
+                              data-bs-parent="#accordionFlushExample2"
+                            >
+                              <div class="accordion-body">
+                                <p>
+                                  Alleviate pressure on your reception desk with a
+                                  club kiosk capable of handling club membership
+                                  management and registration at your facility. A
+                                  great solution for clubs with 24/7 access
+                                  controls for client acquisition at any time.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <button
+                              id="flush-headingThreetwo"
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseThreetwo"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseThreetwo"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="23.625"
+                                viewBox="0 0 24 23.625"
+                                class="pg-icon pg-acc_item-title-text-icon"
+                              >
+                                <path
+                                  d="M19.5 6.749a3.375 3.375 0 113.375-3.375A3.379 3.379 0 0119.5 6.749zm0-5.25a1.875 1.875 0 101.875 1.875A1.877 1.877 0 0019.5 1.499zM19.5 23.625a3 3 0 01-3-3v-3.128a2.26 2.26 0 01-1.5-2.122v-4.5a3.754 3.754 0 013.75-3.75h1.5a3.754 3.754 0 013.75 3.75v4.5a2.26 2.26 0 01-1.5 2.122v3.128a3 3 0 01-3 3zm-.75-15a2.252 2.252 0 00-2.25 2.25v4.5a.75.75 0 00.75.75.75.75 0 01.75.75v3.75a1.5 1.5 0 003 0v-3.75a.75.75 0 01.75-.75.75.75 0 00.75-.75v-4.5a2.252 2.252 0 00-2.25-2.25zM6 6.749a3.375 3.375 0 113.375-3.375A3.379 3.379 0 016 6.749zm0-5.25a1.875 1.875 0 101.875 1.875A1.877 1.877 0 006 1.499zM6 23.625a3 3 0 01-3-3v-3H.75a.751.751 0 01-.712-.988L1.5 12.253v-1.378a3.754 3.754 0 013.75-3.75h1.5a3.754 3.754 0 013.75 3.75v1.378l1.461 4.384a.749.749 0 01-.711.987H9v3a3 3 0 01-3 3.001zm-2.25-7.5a.75.75 0 01.75.75v3.75a1.5 1.5 0 003 0v-3.75a.75.75 0 01.75-.75h1.959l-1.17-3.513A.732.732 0 019 12.375v-1.5a2.252 2.252 0 00-2.25-2.25h-1.5A2.253 2.253 0 003 10.875v1.5a.742.742 0 01-.039.238L1.79 16.125zM10.637 6.136a.37.37 0 01-.265-.11l-.531-.53a.376.376 0 01-.11-.265.372.372 0 01.11-.265 2.25 2.25 0 000-3.182A.751.751 0 0110.9.722a3.752 3.752 0 010 5.3.374.374 0 01-.263.114z"
+                                ></path>
+                                <path
+                                  d="M15.129 6.246a.743.743 0 01-.53-.22 3.753 3.753 0 010-5.3.75.75 0 111.06 1.06 2.25 2.25 0 000 3.182.751.751 0 01-.53 1.281z"
+                                ></path>
+                              </svg>
+                              Sự tự động
+                            </button>
+                            <div
+                              id="flush-collapseThreetwo"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="flush-headingThreetwo"
+                              data-bs-parent="#accordionFlushExample2"
+                            >
+                              <div class="accordion-body">
+                                <p>
+                                  Existing gym members can book classes and refer
+                                  friends or family at any time. Additionally, new
+                                  members can download your gym's mobile app,
+                                  sign-up, or find your other clubs at any time
+                                  with our club finder feature.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="site-content my-md-5 my-4">
+          <div class="container">
+            <div class="section-content__wrapper py-md-5 py-4">
+              <div class="row gx-md-5 d-flex align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                  <div class="content-cover">
+                    <div class="content-cover__wrapper">
+                      <div class="cover-item">
+                        <figure>
+                          <img
+                            src="./assets/images/img-test.webp"
+                            class="img-fluid"
+                            alt="Doanh số và hiệu suất"
+                          />
+                        </figure>
+                        <figure>
+                          <img
+                            src="./assets/images/bg-test.webp"
+                            class="img-fluid"
+                            alt="Doanh số và hiệu suất"
+                          />
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                  <div class="content-main p-lg-5 p-4 m-xl-5">
+                    <div class="content-main__wrapper">
+                      <div class="main-item">
+                        <h2 class="fm-heading-2 c-default">Sales & Marketing</h2>
+                        <p class="fs-28 mt-md-4 mt-3 pt-2 item-sub">
+                          Tăng doanh số bán hàng và hiệu suất tiếp thị cho câu lạc
+                          bộ thể dục của bạn với một nền tảng được thiết kế để
+                          tăng tỷ lệ thu hút thành viên câu lạc bộ.
+                        </p>
+                        <div
+                          class="accordion mt-md-4 mt-4 ms-md-3"
+                          id="accordionFlushExample3"
+                        >
+                          <div class="accordion-item">
+                            <button
+                              id="flush-headingOnethree"
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseOnethree"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseOnethree"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="46.973"
+                                height="46.98"
+                                viewBox="0 0 46.973 46.98"
+                                class="pg-icon pg-acc_item-title-text-icon"
+                              >
+                                <path
+                                  data-name="Path 816"
+                                  d="M2.417 46.98A2.447 2.447 0 010 44.655V38.305v-.061-.074a1.458 1.458 0 01.112-.56 2.348 2.348 0 01.518-.91l4.58-5.05a2.554 2.554 0 011.83-.82h12.045v-2.937H4.4a4.408 4.408 0 01-4.4-4.4V4.4A4.41 4.41 0 014.4 0h35.238a4.408 4.408 0 014.4 4.4v19.089a4.408 4.408 0 01-4.4 4.4 1.468 1.468 0 010-2.936 1.469 1.469 0 001.468-1.468V4.4a1.469 1.469 0 00-1.468-1.468H4.4A1.47 1.47 0 002.936 4.4v19.089A1.469 1.469 0 004.4 24.957h16.153a1.469 1.469 0 011.468 1.468V32.3a1.469 1.469 0 01-1.468 1.47H7.256L4.594 36.7h8.619a1.468 1.468 0 010 2.936H2.936v4.4h10.277a1.468 1.468 0 010 2.936H2.5a.6.6 0 01-.083.008z"
+                                ></path>
+                                <path
+                                  data-name="Path 817"
+                                  d="M15.047 23.489a1.469 1.469 0 01-1.468-1.468v-.693a5.853 5.853 0 01-3.337-2.149 1.468 1.468 0 012.337-1.775 2.9 2.9 0 002.289 1.135h.121c1.519 0 2.631-.824 2.631-1.562s-1.1-1.558-2.57-1.558c-3.036 0-5.5-2.018-5.5-4.5 0-2.059 1.662-3.8 4.036-4.332v-.715a1.468 1.468 0 112.936 0v.695a5.824 5.824 0 013.331 2.147 1.467 1.467 0 11-2.335 1.778 2.9 2.9 0 00-2.295-1.138h-.117c-1.517 0-2.627.826-2.627 1.562s1.1 1.562 2.568 1.562c3.036 0 5.506 2.016 5.506 4.494 0 2.059-1.664 3.8-4.038 4.332v.714a1.468 1.468 0 01-1.468 1.471z"
+                                ></path>
+                                <path
+                                  data-name="Path 818"
+                                  d="M45.287 46.978q-.065 0-.129-.006a1.469 1.469 0 01-1.335-1.593l.2-2.2a4.416 4.416 0 00-3.429-4.7l-7.147-1.588a1.459 1.459 0 01-1.149-1.433V24.305a2.588 2.588 0 00-2.353-2.253 2.227 2.227 0 00-2.049 2.186v17.991a1.468 1.468 0 01-2.349 1.175l-2.9-2.169a1.534 1.534 0 00-2.145.307 1.542 1.542 0 000 1.838l.928 1.235a1.468 1.468 0 01-2.347 1.764l-.93-1.237a4.468 4.468 0 013.58-7.149 4.423 4.423 0 012.674.891l.542.407V24.219a5.165 5.165 0 014.927-5.107H30.017a5.506 5.506 0 015.2 4.956 1.341 1.341 0 01.008.151v10.059l6 1.335a7.357 7.357 0 015.722 7.834l-.2 2.194a1.457 1.457 0 01-1.46 1.337z"
+                                ></path>
+                              </svg>
+                              Hệ thống điểm bán hàng
+                            </button>
+                            <div
+                              id="flush-collapseOnethree"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="flush-headingOnethree"
+                              data-bs-parent="#accordionFlushExample3"
+                            >
+                              <div class="accordion-body">
+                                <p>
+                                  Make online booking convenient for your fitness
+                                  club members. Our Client Portal integrates with
+                                  your website to streamline all personal
+                                  training, fitness facility, and class bookings
+                                  on any device. Members can also manage all
+                                  aspects of their accounts including
+                                  registration, contract renewals, payments, and
+                                  more.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <button
+                              id="flush-headingTwothree"
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseTwothree"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseTwothree"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24.01"
+                                viewBox="0 0 24 24.01"
+                                class="pg-icon pg-acc_item-title-text-icon"
+                              >
+                                <g transform="translate(0 .012)">
+                                  <path
+                                    d="M3.75 24A3.754 3.754 0 010 20.248v-1.5A.75.75 0 01.75 18h.75V8.248A2.252 2.252 0 013.75 6H7.5a.75.75 0 010 1.5H3.75a.751.751 0 00-.75.75V18h6.416a.751.751 0 01.651.378 2.226 2.226 0 003.865 0 .753.753 0 01.651-.378H21v-2.25a.75.75 0 011.5 0V18h.75a.75.75 0 01.75.75v1.5A3.754 3.754 0 0120.25 24zM1.5 20.248A2.252 2.252 0 003.75 22.5h16.5a2.252 2.252 0 002.25-2.25v-.75h-7.512a3.726 3.726 0 01-5.976 0H1.5z"
+                                  ></path>
+                                  <path
+                                    d="M9.013 14.748a.75.75 0 01-.672-1.082L10.25 9.79a7.109 7.109 0 018.6-9.509l.028.007a7.137 7.137 0 11-5.226 13.22L9.213 14.72a.7.7 0 01-.2.028zM16.828 1.49a5.616 5.616 0 00-5.073 8 .748.748 0 01-.006.65l-1.328 2.7 3.116-.851a.755.755 0 01.565.07 5.637 5.637 0 104.377-10.32l-.039-.011a5.593 5.593 0 00-1.612-.238z"
+                                  ></path>
+                                  <path
+                                    d="M14.625 6a1.123 1.123 0 01-.109-2.241.77.77 0 01.109-.009h.077A1.123 1.123 0 0114.625 6z"
+                                  ></path>
+                                  <circle
+                                    cx="1.125"
+                                    cy="1.125"
+                                    r="1.125"
+                                    transform="translate(18 3.748)"
+                                  ></circle>
+                                  <path
+                                    d="M17.049 11.255c-.058 0-.116 0-.174-.005s-.115.005-.172.005a3.228 3.228 0 01-3.2-2.944.75.75 0 01.685-.81h.062a.756.756 0 01.75.686 1.718 1.718 0 001.7 1.569c.041 0 .082 0 .123-.005H17.048a1.721 1.721 0 001.706-1.568.754.754 0 01.746-.683h.063a.75.75 0 01.685.81 3.227 3.227 0 01-3.199 2.945z"
+                                  ></path>
+                                </g>
+                              </svg>
+                              Công cụ khuyến nghị
+                            </button>
+                            <div
+                              id="flush-collapseTwothree"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="flush-headingTwothree"
+                              data-bs-parent="#accordionFlushExample3"
+                            >
+                              <div class="accordion-body">
+                                <p>
+                                  Alleviate pressure on your reception desk with a
+                                  club kiosk capable of handling club membership
+                                  management and registration at your facility. A
+                                  great solution for clubs with 24/7 access
+                                  controls for client acquisition at any time.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <button
+                              id="flush-headingThreethree"
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseThreethree"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseThreethree"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="23.625"
+                                viewBox="0 0 24 23.625"
+                                class="pg-icon pg-acc_item-title-text-icon"
+                              >
+                                <path
+                                  d="M19.5 6.749a3.375 3.375 0 113.375-3.375A3.379 3.379 0 0119.5 6.749zm0-5.25a1.875 1.875 0 101.875 1.875A1.877 1.877 0 0019.5 1.499zM19.5 23.625a3 3 0 01-3-3v-3.128a2.26 2.26 0 01-1.5-2.122v-4.5a3.754 3.754 0 013.75-3.75h1.5a3.754 3.754 0 013.75 3.75v4.5a2.26 2.26 0 01-1.5 2.122v3.128a3 3 0 01-3 3zm-.75-15a2.252 2.252 0 00-2.25 2.25v4.5a.75.75 0 00.75.75.75.75 0 01.75.75v3.75a1.5 1.5 0 003 0v-3.75a.75.75 0 01.75-.75.75.75 0 00.75-.75v-4.5a2.252 2.252 0 00-2.25-2.25zM6 6.749a3.375 3.375 0 113.375-3.375A3.379 3.379 0 016 6.749zm0-5.25a1.875 1.875 0 101.875 1.875A1.877 1.877 0 006 1.499zM6 23.625a3 3 0 01-3-3v-3H.75a.751.751 0 01-.712-.988L1.5 12.253v-1.378a3.754 3.754 0 013.75-3.75h1.5a3.754 3.754 0 013.75 3.75v1.378l1.461 4.384a.749.749 0 01-.711.987H9v3a3 3 0 01-3 3.001zm-2.25-7.5a.75.75 0 01.75.75v3.75a1.5 1.5 0 003 0v-3.75a.75.75 0 01.75-.75h1.959l-1.17-3.513A.732.732 0 019 12.375v-1.5a2.252 2.252 0 00-2.25-2.25h-1.5A2.253 2.253 0 003 10.875v1.5a.742.742 0 01-.039.238L1.79 16.125zM10.637 6.136a.37.37 0 01-.265-.11l-.531-.53a.376.376 0 01-.11-.265.372.372 0 01.11-.265 2.25 2.25 0 000-3.182A.751.751 0 0110.9.722a3.752 3.752 0 010 5.3.374.374 0 01-.263.114z"
+                                ></path>
+                                <path
+                                  d="M15.129 6.246a.743.743 0 01-.53-.22 3.753 3.753 0 010-5.3.75.75 0 111.06 1.06 2.25 2.25 0 000 3.182.751.751 0 01-.53 1.281z"
+                                ></path>
+                              </svg>
+                              CRM
+                            </button>
+                            <div
+                              id="flush-collapseThreethree"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="flush-headingThreethree"
+                              data-bs-parent="#accordionFlushExample3"
+                            >
+                              <div class="accordion-body">
+                                <p>
+                                  Existing gym members can book classes and refer
+                                  friends or family at any time. Additionally, new
+                                  members can download your gym's mobile app,
+                                  sign-up, or find your other clubs at any time
+                                  with our club finder feature.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="site-content my-md-5 my-4">
+          <div class="container">
+            <div class="section-content__wrapper bg-grey py-md-5 py-4">
+              <div class="row gx-md-5 d-flex align-items-center">
+                <div class="col-md-6 order-1 order-md-2" data-aos="fade-right">
+                  <div class="content-cover">
+                    <div class="content-cover__wrapper">
+                      <div class="cover-item">
+                        <figure>
+                          <img
+                            src="./assets/images/pg-section-increase-club-retention-s.a55793c.jpg"
+                            class="img-fluid"
+                            alt="giải pháp phần mềm"
+                          />
+                        </figure>
+                        <figure>
+                          <img
+                            src="./assets/images/pg-section-increase-operations-s.6173811.jpg"
+                            class="img-fluid"
+                            alt="giải pháp phần mềm"
+                          />
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 order-2 order-md-1" data-aos="fade-left">
+                  <div class="content-main p-lg-5 p-4 m-xl-5">
+                    <div class="content-main__wrapper">
+                      <div class="main-item">
+                        <h2 class="fm-heading-2 c-default">Hoạt động</h2>
+                        <p class="fs-28 mt-md-4 mt-3 pt-2 item-sub">
+                          Các giải pháp phần mềm quản lý câu lạc bộ sức khỏe và
+                          thể dục của chúng tôi được thiết kế riêng để giúp bạn
+                          điều hành tất cả các khía cạnh hoạt động của câu lạc bộ
+                          một cách dễ dàng.
+                        </p>
+                        <div
+                          class="accordion mt-md-4 mt-4 ms-md-3"
+                          id="accordionFlushExample4"
+                        >
+                          <div class="accordion-item">
+                            <button
+                              id="flush-headingOnefour"
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseOnefour"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseOnefour"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="46.973"
+                                height="46.98"
+                                viewBox="0 0 46.973 46.98"
+                                class="pg-icon pg-acc_item-title-text-icon"
+                              >
+                                <path
+                                  data-name="Path 816"
+                                  d="M2.417 46.98A2.447 2.447 0 010 44.655V38.305v-.061-.074a1.458 1.458 0 01.112-.56 2.348 2.348 0 01.518-.91l4.58-5.05a2.554 2.554 0 011.83-.82h12.045v-2.937H4.4a4.408 4.408 0 01-4.4-4.4V4.4A4.41 4.41 0 014.4 0h35.238a4.408 4.408 0 014.4 4.4v19.089a4.408 4.408 0 01-4.4 4.4 1.468 1.468 0 010-2.936 1.469 1.469 0 001.468-1.468V4.4a1.469 1.469 0 00-1.468-1.468H4.4A1.47 1.47 0 002.936 4.4v19.089A1.469 1.469 0 004.4 24.957h16.153a1.469 1.469 0 011.468 1.468V32.3a1.469 1.469 0 01-1.468 1.47H7.256L4.594 36.7h8.619a1.468 1.468 0 010 2.936H2.936v4.4h10.277a1.468 1.468 0 010 2.936H2.5a.6.6 0 01-.083.008z"
+                                ></path>
+                                <path
+                                  data-name="Path 817"
+                                  d="M15.047 23.489a1.469 1.469 0 01-1.468-1.468v-.693a5.853 5.853 0 01-3.337-2.149 1.468 1.468 0 012.337-1.775 2.9 2.9 0 002.289 1.135h.121c1.519 0 2.631-.824 2.631-1.562s-1.1-1.558-2.57-1.558c-3.036 0-5.5-2.018-5.5-4.5 0-2.059 1.662-3.8 4.036-4.332v-.715a1.468 1.468 0 112.936 0v.695a5.824 5.824 0 013.331 2.147 1.467 1.467 0 11-2.335 1.778 2.9 2.9 0 00-2.295-1.138h-.117c-1.517 0-2.627.826-2.627 1.562s1.1 1.562 2.568 1.562c3.036 0 5.506 2.016 5.506 4.494 0 2.059-1.664 3.8-4.038 4.332v.714a1.468 1.468 0 01-1.468 1.471z"
+                                ></path>
+                                <path
+                                  data-name="Path 818"
+                                  d="M45.287 46.978q-.065 0-.129-.006a1.469 1.469 0 01-1.335-1.593l.2-2.2a4.416 4.416 0 00-3.429-4.7l-7.147-1.588a1.459 1.459 0 01-1.149-1.433V24.305a2.588 2.588 0 00-2.353-2.253 2.227 2.227 0 00-2.049 2.186v17.991a1.468 1.468 0 01-2.349 1.175l-2.9-2.169a1.534 1.534 0 00-2.145.307 1.542 1.542 0 000 1.838l.928 1.235a1.468 1.468 0 01-2.347 1.764l-.93-1.237a4.468 4.468 0 013.58-7.149 4.423 4.423 0 012.674.891l.542.407V24.219a5.165 5.165 0 014.927-5.107H30.017a5.506 5.506 0 015.2 4.956 1.341 1.341 0 01.008.151v10.059l6 1.335a7.357 7.357 0 015.722 7.834l-.2 2.194a1.457 1.457 0 01-1.46 1.337z"
+                                ></path>
+                              </svg>
+                              Trang tổng quan & Báo cáo
+                            </button>
+                            <div
+                              id="flush-collapseOnefour"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="flush-headingOnefour"
+                              data-bs-parent="#accordionFlushExample4"
+                            >
+                              <div class="accordion-body">
+                                <p>
+                                  Make online booking convenient for your fitness
+                                  club members. Our Client Portal integrates with
+                                  your website to streamline all personal
+                                  training, fitness facility, and class bookings
+                                  on any device. Members can also manage all
+                                  aspects of their accounts including
+                                  registration, contract renewals, payments, and
+                                  more.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <button
+                              id="flush-headingTwofour"
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseTwofour"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseTwofour"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24.01"
+                                viewBox="0 0 24 24.01"
+                                class="pg-icon pg-acc_item-title-text-icon"
+                              >
+                                <g transform="translate(0 .012)">
+                                  <path
+                                    d="M3.75 24A3.754 3.754 0 010 20.248v-1.5A.75.75 0 01.75 18h.75V8.248A2.252 2.252 0 013.75 6H7.5a.75.75 0 010 1.5H3.75a.751.751 0 00-.75.75V18h6.416a.751.751 0 01.651.378 2.226 2.226 0 003.865 0 .753.753 0 01.651-.378H21v-2.25a.75.75 0 011.5 0V18h.75a.75.75 0 01.75.75v1.5A3.754 3.754 0 0120.25 24zM1.5 20.248A2.252 2.252 0 003.75 22.5h16.5a2.252 2.252 0 002.25-2.25v-.75h-7.512a3.726 3.726 0 01-5.976 0H1.5z"
+                                  ></path>
+                                  <path
+                                    d="M9.013 14.748a.75.75 0 01-.672-1.082L10.25 9.79a7.109 7.109 0 018.6-9.509l.028.007a7.137 7.137 0 11-5.226 13.22L9.213 14.72a.7.7 0 01-.2.028zM16.828 1.49a5.616 5.616 0 00-5.073 8 .748.748 0 01-.006.65l-1.328 2.7 3.116-.851a.755.755 0 01.565.07 5.637 5.637 0 104.377-10.32l-.039-.011a5.593 5.593 0 00-1.612-.238z"
+                                  ></path>
+                                  <path
+                                    d="M14.625 6a1.123 1.123 0 01-.109-2.241.77.77 0 01.109-.009h.077A1.123 1.123 0 0114.625 6z"
+                                  ></path>
+                                  <circle
+                                    cx="1.125"
+                                    cy="1.125"
+                                    r="1.125"
+                                    transform="translate(18 3.748)"
+                                  ></circle>
+                                  <path
+                                    d="M17.049 11.255c-.058 0-.116 0-.174-.005s-.115.005-.172.005a3.228 3.228 0 01-3.2-2.944.75.75 0 01.685-.81h.062a.756.756 0 01.75.686 1.718 1.718 0 001.7 1.569c.041 0 .082 0 .123-.005H17.048a1.721 1.721 0 001.706-1.568.754.754 0 01.746-.683h.063a.75.75 0 01.685.81 3.227 3.227 0 01-3.199 2.945z"
+                                  ></path>
+                                </g>
+                              </svg>
+                              Tích hợp thể dục
+                            </button>
+                            <div
+                              id="flush-collapseTwofour"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="flush-headingTwofour"
+                              data-bs-parent="#accordionFlushExample4"
+                            >
+                              <div class="accordion-body">
+                                <p>
+                                  Alleviate pressure on your reception desk with a
+                                  club kiosk capable of handling club membership
+                                  management and registration at your facility. A
+                                  great solution for clubs with 24/7 access
+                                  controls for client acquisition at any time.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <button
+                              id="flush-headingThreefour"
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseThreefour"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseThreefour"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="23.625"
+                                viewBox="0 0 24 23.625"
+                                class="pg-icon pg-acc_item-title-text-icon"
+                              >
+                                <path
+                                  d="M19.5 6.749a3.375 3.375 0 113.375-3.375A3.379 3.379 0 0119.5 6.749zm0-5.25a1.875 1.875 0 101.875 1.875A1.877 1.877 0 0019.5 1.499zM19.5 23.625a3 3 0 01-3-3v-3.128a2.26 2.26 0 01-1.5-2.122v-4.5a3.754 3.754 0 013.75-3.75h1.5a3.754 3.754 0 013.75 3.75v4.5a2.26 2.26 0 01-1.5 2.122v3.128a3 3 0 01-3 3zm-.75-15a2.252 2.252 0 00-2.25 2.25v4.5a.75.75 0 00.75.75.75.75 0 01.75.75v3.75a1.5 1.5 0 003 0v-3.75a.75.75 0 01.75-.75.75.75 0 00.75-.75v-4.5a2.252 2.252 0 00-2.25-2.25zM6 6.749a3.375 3.375 0 113.375-3.375A3.379 3.379 0 016 6.749zm0-5.25a1.875 1.875 0 101.875 1.875A1.877 1.877 0 006 1.499zM6 23.625a3 3 0 01-3-3v-3H.75a.751.751 0 01-.712-.988L1.5 12.253v-1.378a3.754 3.754 0 013.75-3.75h1.5a3.754 3.754 0 013.75 3.75v1.378l1.461 4.384a.749.749 0 01-.711.987H9v3a3 3 0 01-3 3.001zm-2.25-7.5a.75.75 0 01.75.75v3.75a1.5 1.5 0 003 0v-3.75a.75.75 0 01.75-.75h1.959l-1.17-3.513A.732.732 0 019 12.375v-1.5a2.252 2.252 0 00-2.25-2.25h-1.5A2.253 2.253 0 003 10.875v1.5a.742.742 0 01-.039.238L1.79 16.125zM10.637 6.136a.37.37 0 01-.265-.11l-.531-.53a.376.376 0 01-.11-.265.372.372 0 01.11-.265 2.25 2.25 0 000-3.182A.751.751 0 0110.9.722a3.752 3.752 0 010 5.3.374.374 0 01-.263.114z"
+                                ></path>
+                                <path
+                                  d="M15.129 6.246a.743.743 0 01-.53-.22 3.753 3.753 0 010-5.3.75.75 0 111.06 1.06 2.25 2.25 0 000 3.182.751.751 0 01-.53 1.281z"
+                                ></path>
+                              </svg>
+                              Quản lý nhân viên
+                            </button>
+                            <div
+                              id="flush-collapseThreefour"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="flush-headingThreefour"
+                              data-bs-parent="#accordionFlushExample4"
+                            >
+                              <div class="accordion-body">
+                                <p>
+                                  Existing gym members can book classes and refer
+                                  friends or family at any time. Additionally, new
+                                  members can download your gym's mobile app,
+                                  sign-up, or find your other clubs at any time
+                                  with our club finder feature.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- BANNER-BOTTOM -->
+        <section class="site-banner-bottom my-md-5 my-4 py-md-5 py-4">
+          <div class="container">
+            <div class="banner-bottom__wrapper">
+              <h2 class="fm-heading-2 text-center">Tính năng của App</h2>
+              <div class="line mt-4 mb-5"></div>
+              <div class="row gx-md-5">
+                <div
+                  class="col-xl-3 col-6"
+                  data-aos="fade-down"
+                  data-aos-delay="700"
+                >
+                  <div class="item-bottom">
+                    <figure>
+                      <img
+                        src="./assets/images/banner.png"
+                        class="img-fluid"
+                        alt="App Gym Vision"
+                      />
+                    </figure>
+                    <div class="content">
+                      <h3 class="fm-heading-3 fw-bold my-3 c-default">
+                        Gym Vision của brand
+                      </h3>
+                      <p>
+                        Doanh nghiệp sở hữu app chăm sóc khách hàng riêng, với tất
+                        cả tính năng tích điểm, ưu đãi, đẩy tin nhắn...
+                      </p>
+                    </div>
+                    <div class="btn-scroll">
+                      <a href="#">
+                        <span> Xem thêm </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-6"
+                  data-aos="fade-down"
+                  data-aos-delay="500"
+                >
+                  <div class="item-bottom">
+                    <figure>
+                      <img
+                        src="./assets/images/banner.png"
+                        class="img-fluid"
+                        alt="App Gym Vision"
+                      />
+                    </figure>
+                    <div class="content">
+                      <h3 class="fm-heading-3 fw-bold my-3 c-default">
+                        Gym Vision của brand
+                      </h3>
+                      <p>
+                        Doanh nghiệp sở hữu app chăm sóc khách hàng riêng, với tất
+                        cả tính năng tích điểm, ưu đãi, đẩy tin nhắn...
+                      </p>
+                    </div>
+                    <div class="btn-scroll">
+                      <a href="#">
+                        <span> Xem thêm </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-6"
+                  data-aos="fade-down"
+                  data-aos-delay="400"
+                >
+                  <div class="item-bottom">
+                    <figure>
+                      <img
+                        src="./assets/images/banner.png"
+                        class="img-fluid"
+                        alt="App Gym Vision"
+                      />
+                    </figure>
+                    <div class="content">
+                      <h3 class="fm-heading-3 fw-bold my-3 c-default">
+                        Gym Vision của brand
+                      </h3>
+                      <p>
+                        Doanh nghiệp sở hữu app chăm sóc khách hàng riêng, với tất
+                        cả tính năng tích điểm, ưu đãi, đẩy tin nhắn...
+                      </p>
+                    </div>
+                    <div class="btn-scroll">
+                      <a href="#">
+                        <span> Xem thêm </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-6"
+                  data-aos="fade-down"
+                  data-aos-delay="700"
+                >
+                  <div class="item-bottom">
+                    <figure>
+                      <img
+                        src="./assets/images/banner.png"
+                        class="img-fluid"
+                        alt="App Gym Vision"
+                      />
+                    </figure>
+                    <div class="content">
+                      <h3 class="fm-heading-3 fw-bold my-3 c-default">
+                        Gym Vision của brand
+                      </h3>
+                      <p>
+                        Doanh nghiệp sở hữu app chăm sóc khách hàng riêng, với tất
+                        cả tính năng tích điểm, ưu đãi, đẩy tin nhắn...
+                      </p>
+                    </div>
+                    <div class="btn-scroll">
+                      <a href="#">
+                        <span> Xem thêm </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SITE CASE -->
+        <section class="site-case mt-md-5 mt-4 py-4" data-aos="fade-up">
+          <div class="container">
+            <div class="site-case__wrapper py-md-4 py-3">
               <div class="text-center">
-                <h2 class="fm-heading-2 c-default">
-                  Hơn 500+ doanh nghiệp đã sở hữu Gym Vision
-                </h2>
-                <span class="sub-title fs-16 mt-3">
-                  Để xây dựng chương trình khách hàng trung thành, hiệu quả, tiết
-                  kiệm
-                </span>
+                <h2 class="fm-heading-2 c-white">Case study điển hình</h2>
                 <div class="line my-4"></div>
               </div>
-              <div class="partner-slide-1 mt-md-5 pt-md-4 pt-0 mt-4">
-                <div class="partner-slide__item">
-                  <figure>
-                    <a href="#">
-                      <img
-                        src="./assets/images/group-3319.jpeg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </a>
-                  </figure>
+              <div class="position-relative mt-md-5 mt-4">
+                <div class="btn-prev">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </div>
-                <div class="partner-slide__item">
-                  <figure>
-                    <a href="#">
-                      <img
-                        src="./assets/images/group-3319.jpeg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </a>
-                  </figure>
+                <div class="btn-next">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </div>
-                <div class="partner-slide__item">
-                  <figure>
-                    <a href="#">
+                <div class="case-slide py-4">
+                  <div class="case-item">
+                    <figure>
                       <img
-                        src="./assets/images/group-3319.jpeg"
+                        src="./assets/images/9.jpeg"
                         class="img-fluid"
-                        alt=""
+                        alt="Body build"
                       />
-                    </a>
-                  </figure>
-                </div>
-                <div class="partner-slide__item">
-                  <figure>
-                    <a href="#">
+                    </figure>
+                  </div>
+                  <div class="case-item">
+                    <figure>
                       <img
-                        src="./assets/images/group-3319.jpeg"
+                        src="./assets/images/8.jpeg"
                         class="img-fluid"
-                        alt=""
+                        alt="Body build"
                       />
-                    </a>
-                  </figure>
-                </div>
-                <div class="partner-slide__item">
-                  <figure>
-                    <a href="#">
+                    </figure>
+                  </div>
+                  <div class="case-item">
+                    <figure>
                       <img
-                        src="./assets/images/group-3319.jpeg"
+                        src="./assets/images/7.jpeg"
                         class="img-fluid"
-                        alt=""
+                        alt="Body build"
                       />
-                    </a>
-                  </figure>
-                </div>
-                <div class="partner-slide__item">
-                  <figure>
-                    <a href="#">
+                    </figure>
+                  </div>
+                  <div class="case-item">
+                    <figure>
                       <img
-                        src="./assets/images/group-3319.jpeg"
+                        src="./assets/images/3.jpeg"
                         class="img-fluid"
-                        alt=""
+                        alt="Body build"
                       />
-                    </a>
-                  </figure>
+                    </figure>
+                  </div>
+                  <div class="case-item">
+                    <figure>
+                      <img
+                        src="./assets/images/2.jpeg"
+                        class="img-fluid"
+                        alt="Body build"
+                      />
+                    </figure>
+                  </div>
+                  <div class="case-item">
+                    <figure>
+                      <img
+                        src="./assets/images/10.jpeg"
+                        class="img-fluid"
+                        alt="Body build"
+                      />
+                    </figure>
+                  </div>
                 </div>
               </div>
-              <div class="partner-slide-2 mt-md-5 pt-md-4 pt-0 mt-4">
-                <div class="partner-slide__item">
-                  <figure>
-                    <a href="#">
-                      <img
-                        src="./assets/images/group-3319.jpeg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </a>
-                  </figure>
-                </div>
-                <div class="partner-slide__item">
-                  <figure>
-                    <a href="#">
-                      <img
-                        src="./assets/images/group-3319.jpeg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </a>
-                  </figure>
-                </div>
-                <div class="partner-slide__item">
-                  <figure>
-                    <a href="#">
-                      <img
-                        src="./assets/images/group-3319.jpeg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </a>
-                  </figure>
-                </div>
-                <div class="partner-slide__item">
-                  <figure>
-                    <a href="#">
-                      <img
-                        src="./assets/images/group-3319.jpeg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </a>
-                  </figure>
-                </div>
-                <div class="partner-slide__item">
-                  <figure>
-                    <a href="#">
-                      <img
-                        src="./assets/images/group-3319.jpeg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </a>
-                  </figure>
-                </div>
-                <div class="partner-slide__item">
-                  <figure>
-                    <a href="#">
-                      <img
-                        src="./assets/images/group-3319.jpeg"
-                        class="img-fluid"
-                        alt=""
-                      />
-                    </a>
-                  </figure>
-                </div>
+            </div>
+          </div>
+        </section>
+        <!-- SITE FEATURE -->
+        <!-- <section class="site-feature mt-md-5 mt-4 py-4">
+          <div class="container">
+            <div class="site-feature__wrapper">
+              <div class="text-center">
+                <h2 class="fm-heading-2">Những tính năng nổi bật</h2>
+                <div class="line my-4"></div>
               </div>
-              <div class="dots-custom">
+              <div class="main-feature my-md-5 my-4 py-md-5 py-4 ">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-md-11">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-md-3" data-aos="fade-right" data-aos-delay="1200">
+                        <div class="main-feature__wrapper">
+                          <div class="row gy-5" >
+                            <div class="col-12" >
+                              <div class="feature-item text-center">
+                                <figure>
+                                  <img
+                                    src="./assets/images/icon-tich-diem.png"
+                                    class="img-fluid"
+                                    alt=""
+                                  />
+                                </figure>
+                                <h3 class="fm-heading-3 text-uppercase">
+                                  Tích điểm, tạo ưu đãi, đổi thưởng
+                                </h3>
+                                <p class="my-4">
+                                  Tự động hoá quá trình thông báo ưu đãi đến khách
+                                  hàng, sử dụng ưu đãi và tích điểm. ...
+                                </p>
+                                <div class="see-more">
+                                  <a href="#"> <span>Xem thêm</span></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="feature-item text-center">
+                                <figure>
+                                  <img
+                                    src="./assets/images/icon-tich-diem.png"
+                                    class="img-fluid"
+                                    alt=""
+                                  />
+                                </figure>
+                                <h3 class="fm-heading-3 text-uppercase">
+                                  Tích điểm, tạo ưu đãi, đổi thưởng
+                                </h3>
+                                <p class="my-4">
+                                  Tự động hoá quá trình thông báo ưu đãi đến khách
+                                  hàng, sử dụng ưu đãi và tích điểm. ...
+                                </p>
+                                <div class="see-more">
+                                  <a href="#"> <span>Xem thêm</span></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6" data-aos="zoom-out">
+                        <div class="feature-main__wrapper">
+                          <figure class="feature-cover text-center">
+                            <img
+                              src="./assets/images/giai-phap-doanh-nghiep.png"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </figure>
+                        </div>
+                      </div>
+                      <div class="col-md-3" data-aos="fade-left" data-aos-delay="1200">
+                        <div class="main-feature__wrapper">
+                          <div class="row gy-5">
+                            <div class="col-12">
+                              <div class="feature-item text-center">
+                                <figure>
+                                  <img
+                                    src="./assets/images/icon-tich-diem.png"
+                                    class="img-fluid"
+                                    alt=""
+                                  />
+                                </figure>
+                                <h3 class="fm-heading-3 text-uppercase">
+                                  Tích điểm, tạo ưu đãi, đổi thưởng
+                                </h3>
+                                <p class="my-4">
+                                  Tự động hoá quá trình thông báo ưu đãi đến khách
+                                  hàng, sử dụng ưu đãi và tích điểm. ...
+                                </p>
+                                <div class="see-more">
+                                  <a href="#"> <span>Xem thêm</span></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="feature-item text-center">
+                                <figure>
+                                  <img
+                                    src="./assets/images/icon-tich-diem.png"
+                                    class="img-fluid"
+                                    alt=""
+                                  />
+                                </figure>
+                                <h3 class="fm-heading-3 text-uppercase">
+                                  Tích điểm, tạo ưu đãi, đổi thưởng
+                                </h3>
+                                <p class="my-4">
+                                  Tự động hoá quá trình thông báo ưu đãi đến khách
+                                  hàng, sử dụng ưu đãi và tích điểm. ...
+                                </p>
+                                <div class="see-more">
+                                  <a href="#"> <span>Xem thêm</span></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section> -->
-
-      <!-- SECTION DEMO -->
-      <section class="site-content my-md-5 my-4">
-        <div class="container">
-          <div class="section-content__wrapper py-md-5 py-4">
-            <div class="row gx-md-5 d-flex align-items-center">
-              <div class="col-md-6" data-aos="fade-right">
-                <div class="content-cover">
-                  <div class="content-cover__wrapper">
-                    <div class="cover-item">
-                      <figure>
-                        <img
-                          src="./assets/images/img-test.webp"
-                          class="img-fluid"
-                          alt="Tính năng Gym Vison"
-                        />
-                      </figure>
-                      <figure>
-                        <img
-                          src="./assets/images/bg-test.webp"
-                          class="img-fluid"
-                          alt="Tính năng Gym Vison"
-                        />
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6" data-aos="fade-left">
-                <div class="content-main p-lg-5 p-4 m-xl-5">
-                  <div class="content-main__wrapper">
-                    <div class="main-item">
-                      <h2 class="fm-heading-2 c-default">Sự tự phục vụ</h2>
-                      <p class="fs-28 mt-md-4 mt-3 pt-2 item-sub">
-                        Trao quyền kiểm soát cho thành viên câu lạc bộ với giải
-                        pháp phần mềm thể dục cao cấp cho việc tự phục vụ
-                      </p>
-                      <div
-                        class="accordion mt-md-4 mt-4 ms-md-3"
-                        id="accordionFlushExample"
-                      >
-                        <div class="accordion-item">
-                          <button
-                            id="flush-headingOne"
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseOne"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="46.973"
-                              height="46.98"
-                              viewBox="0 0 46.973 46.98"
-                              class="pg-icon pg-acc_item-title-text-icon"
-                            >
-                              <path
-                                data-name="Path 816"
-                                d="M2.417 46.98A2.447 2.447 0 010 44.655V38.305v-.061-.074a1.458 1.458 0 01.112-.56 2.348 2.348 0 01.518-.91l4.58-5.05a2.554 2.554 0 011.83-.82h12.045v-2.937H4.4a4.408 4.408 0 01-4.4-4.4V4.4A4.41 4.41 0 014.4 0h35.238a4.408 4.408 0 014.4 4.4v19.089a4.408 4.408 0 01-4.4 4.4 1.468 1.468 0 010-2.936 1.469 1.469 0 001.468-1.468V4.4a1.469 1.469 0 00-1.468-1.468H4.4A1.47 1.47 0 002.936 4.4v19.089A1.469 1.469 0 004.4 24.957h16.153a1.469 1.469 0 011.468 1.468V32.3a1.469 1.469 0 01-1.468 1.47H7.256L4.594 36.7h8.619a1.468 1.468 0 010 2.936H2.936v4.4h10.277a1.468 1.468 0 010 2.936H2.5a.6.6 0 01-.083.008z"
-                              ></path>
-                              <path
-                                data-name="Path 817"
-                                d="M15.047 23.489a1.469 1.469 0 01-1.468-1.468v-.693a5.853 5.853 0 01-3.337-2.149 1.468 1.468 0 012.337-1.775 2.9 2.9 0 002.289 1.135h.121c1.519 0 2.631-.824 2.631-1.562s-1.1-1.558-2.57-1.558c-3.036 0-5.5-2.018-5.5-4.5 0-2.059 1.662-3.8 4.036-4.332v-.715a1.468 1.468 0 112.936 0v.695a5.824 5.824 0 013.331 2.147 1.467 1.467 0 11-2.335 1.778 2.9 2.9 0 00-2.295-1.138h-.117c-1.517 0-2.627.826-2.627 1.562s1.1 1.562 2.568 1.562c3.036 0 5.506 2.016 5.506 4.494 0 2.059-1.664 3.8-4.038 4.332v.714a1.468 1.468 0 01-1.468 1.471z"
-                              ></path>
-                              <path
-                                data-name="Path 818"
-                                d="M45.287 46.978q-.065 0-.129-.006a1.469 1.469 0 01-1.335-1.593l.2-2.2a4.416 4.416 0 00-3.429-4.7l-7.147-1.588a1.459 1.459 0 01-1.149-1.433V24.305a2.588 2.588 0 00-2.353-2.253 2.227 2.227 0 00-2.049 2.186v17.991a1.468 1.468 0 01-2.349 1.175l-2.9-2.169a1.534 1.534 0 00-2.145.307 1.542 1.542 0 000 1.838l.928 1.235a1.468 1.468 0 01-2.347 1.764l-.93-1.237a4.468 4.468 0 013.58-7.149 4.423 4.423 0 012.674.891l.542.407V24.219a5.165 5.165 0 014.927-5.107H30.017a5.506 5.506 0 015.2 4.956 1.341 1.341 0 01.008.151v10.059l6 1.335a7.357 7.357 0 015.722 7.834l-.2 2.194a1.457 1.457 0 01-1.46 1.337z"
-                              ></path>
-                            </svg>
-                            Đặt chỗ và đăng ký trực tuyến
-                          </button>
-                          <div
-                            id="flush-collapseOne"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne"
-                            data-bs-parent="#accordionFlushExample"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Make online booking convenient for your fitness
-                                club members. Our Client Portal integrates with
-                                your website to streamline all personal
-                                training, fitness facility, and class bookings
-                                on any device. Members can also manage all
-                                aspects of their accounts including
-                                registration, contract renewals, payments, and
-                                more.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <button
-                            id="flush-headingTwo"
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseTwo"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24.01"
-                              viewBox="0 0 24 24.01"
-                              class="pg-icon pg-acc_item-title-text-icon"
-                            >
-                              <g transform="translate(0 .012)">
-                                <path
-                                  d="M3.75 24A3.754 3.754 0 010 20.248v-1.5A.75.75 0 01.75 18h.75V8.248A2.252 2.252 0 013.75 6H7.5a.75.75 0 010 1.5H3.75a.751.751 0 00-.75.75V18h6.416a.751.751 0 01.651.378 2.226 2.226 0 003.865 0 .753.753 0 01.651-.378H21v-2.25a.75.75 0 011.5 0V18h.75a.75.75 0 01.75.75v1.5A3.754 3.754 0 0120.25 24zM1.5 20.248A2.252 2.252 0 003.75 22.5h16.5a2.252 2.252 0 002.25-2.25v-.75h-7.512a3.726 3.726 0 01-5.976 0H1.5z"
-                                ></path>
-                                <path
-                                  d="M9.013 14.748a.75.75 0 01-.672-1.082L10.25 9.79a7.109 7.109 0 018.6-9.509l.028.007a7.137 7.137 0 11-5.226 13.22L9.213 14.72a.7.7 0 01-.2.028zM16.828 1.49a5.616 5.616 0 00-5.073 8 .748.748 0 01-.006.65l-1.328 2.7 3.116-.851a.755.755 0 01.565.07 5.637 5.637 0 104.377-10.32l-.039-.011a5.593 5.593 0 00-1.612-.238z"
-                                ></path>
-                                <path
-                                  d="M14.625 6a1.123 1.123 0 01-.109-2.241.77.77 0 01.109-.009h.077A1.123 1.123 0 0114.625 6z"
-                                ></path>
-                                <circle
-                                  cx="1.125"
-                                  cy="1.125"
-                                  r="1.125"
-                                  transform="translate(18 3.748)"
-                                ></circle>
-                                <path
-                                  d="M17.049 11.255c-.058 0-.116 0-.174-.005s-.115.005-.172.005a3.228 3.228 0 01-3.2-2.944.75.75 0 01.685-.81h.062a.756.756 0 01.75.686 1.718 1.718 0 001.7 1.569c.041 0 .082 0 .123-.005H17.048a1.721 1.721 0 001.706-1.568.754.754 0 01.746-.683h.063a.75.75 0 01.685.81 3.227 3.227 0 01-3.199 2.945z"
-                                ></path>
-                              </g>
-                            </svg>
-                            Quầy bán hàng
-                          </button>
-                          <div
-                            id="flush-collapseTwo"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingTwo"
-                            data-bs-parent="#accordionFlushExample"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Alleviate pressure on your reception desk with a
-                                club kiosk capable of handling club membership
-                                management and registration at your facility. A
-                                great solution for clubs with 24/7 access
-                                controls for client acquisition at any time.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <button
-                            id="flush-headingThree"
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseThree"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="23.625"
-                              viewBox="0 0 24 23.625"
-                              class="pg-icon pg-acc_item-title-text-icon"
-                            >
-                              <path
-                                d="M19.5 6.749a3.375 3.375 0 113.375-3.375A3.379 3.379 0 0119.5 6.749zm0-5.25a1.875 1.875 0 101.875 1.875A1.877 1.877 0 0019.5 1.499zM19.5 23.625a3 3 0 01-3-3v-3.128a2.26 2.26 0 01-1.5-2.122v-4.5a3.754 3.754 0 013.75-3.75h1.5a3.754 3.754 0 013.75 3.75v4.5a2.26 2.26 0 01-1.5 2.122v3.128a3 3 0 01-3 3zm-.75-15a2.252 2.252 0 00-2.25 2.25v4.5a.75.75 0 00.75.75.75.75 0 01.75.75v3.75a1.5 1.5 0 003 0v-3.75a.75.75 0 01.75-.75.75.75 0 00.75-.75v-4.5a2.252 2.252 0 00-2.25-2.25zM6 6.749a3.375 3.375 0 113.375-3.375A3.379 3.379 0 016 6.749zm0-5.25a1.875 1.875 0 101.875 1.875A1.877 1.877 0 006 1.499zM6 23.625a3 3 0 01-3-3v-3H.75a.751.751 0 01-.712-.988L1.5 12.253v-1.378a3.754 3.754 0 013.75-3.75h1.5a3.754 3.754 0 013.75 3.75v1.378l1.461 4.384a.749.749 0 01-.711.987H9v3a3 3 0 01-3 3.001zm-2.25-7.5a.75.75 0 01.75.75v3.75a1.5 1.5 0 003 0v-3.75a.75.75 0 01.75-.75h1.959l-1.17-3.513A.732.732 0 019 12.375v-1.5a2.252 2.252 0 00-2.25-2.25h-1.5A2.253 2.253 0 003 10.875v1.5a.742.742 0 01-.039.238L1.79 16.125zM10.637 6.136a.37.37 0 01-.265-.11l-.531-.53a.376.376 0 01-.11-.265.372.372 0 01.11-.265 2.25 2.25 0 000-3.182A.751.751 0 0110.9.722a3.752 3.752 0 010 5.3.374.374 0 01-.263.114z"
-                              ></path>
-                              <path
-                                d="M15.129 6.246a.743.743 0 01-.53-.22 3.753 3.753 0 010-5.3.75.75 0 111.06 1.06 2.25 2.25 0 000 3.182.751.751 0 01-.53 1.281z"
-                              ></path>
-                            </svg>
-                            Ứng dụng di động
-                          </button>
-                          <div
-                            id="flush-collapseThree"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingThree"
-                            data-bs-parent="#accordionFlushExample"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Existing gym members can book classes and refer
-                                friends or family at any time. Additionally, new
-                                members can download your gym's mobile app,
-                                sign-up, or find your other clubs at any time
-                                with our club finder feature.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="site-content my-md-5 my-4">
-        <div class="container">
-          <div class="section-content__wrapper bg-grey py-md-5 py-4">
-            <div class="row gx-md-5 d-flex align-items-center">
-              <div class="col-md-6 order-1 order-md-2" data-aos="fade-right">
-                <div class="content-cover">
-                  <div class="content-cover__wrapper">
-                    <div class="cover-item">
-                      <figure>
-                        <img
-                          src="./assets/images/pg-section-increase-club-retention-s.a55793c.jpg"
-                          class="img-fluid"
-                          alt="Phân tích nâng cao"
-                        />
-                      </figure>
-                      <figure>
-                        <img
-                          src="./assets/images/pg-section-increase-operations-s.6173811.jpg"
-                          class="img-fluid"
-                          alt="Phân tích nâng cao"
-                        />
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 order-2 order-md-1" data-aos="fade-left">
-                <div class="content-main p-lg-5 p-4 m-xl-5">
-                  <div class="content-main__wrapper">
-                    <div class="main-item">
-                      <h2 class="fm-heading-2 c-default">
-                        Tăng tỷ lệ giữ chân khách hàng
-                      </h2>
-                      <p class="fs-28 mt-md-4 mt-3 pt-2 item-sub">
-                        Với phân tích nâng cao và báo cáo của chúng tôi, bạn có
-                        thể tăng tỷ lệ giữ khách tại phòng tập của mình và giữ
-                        cho các thành viên của bạn tập trung vào hiệu suất thể
-                        dục của họ.
-                      </p>
-                      <div
-                        class="accordion mt-md-4 mt-4 ms-md-3"
-                        id="accordionFlushExample2"
-                      >
-                        <div class="accordion-item">
-                          <button
-                            id="flush-headingOne"
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOnetwo"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseOnetwo"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="46.973"
-                              height="46.98"
-                              viewBox="0 0 46.973 46.98"
-                              class="pg-icon pg-acc_item-title-text-icon"
-                            >
-                              <path
-                                data-name="Path 816"
-                                d="M2.417 46.98A2.447 2.447 0 010 44.655V38.305v-.061-.074a1.458 1.458 0 01.112-.56 2.348 2.348 0 01.518-.91l4.58-5.05a2.554 2.554 0 011.83-.82h12.045v-2.937H4.4a4.408 4.408 0 01-4.4-4.4V4.4A4.41 4.41 0 014.4 0h35.238a4.408 4.408 0 014.4 4.4v19.089a4.408 4.408 0 01-4.4 4.4 1.468 1.468 0 010-2.936 1.469 1.469 0 001.468-1.468V4.4a1.469 1.469 0 00-1.468-1.468H4.4A1.47 1.47 0 002.936 4.4v19.089A1.469 1.469 0 004.4 24.957h16.153a1.469 1.469 0 011.468 1.468V32.3a1.469 1.469 0 01-1.468 1.47H7.256L4.594 36.7h8.619a1.468 1.468 0 010 2.936H2.936v4.4h10.277a1.468 1.468 0 010 2.936H2.5a.6.6 0 01-.083.008z"
-                              ></path>
-                              <path
-                                data-name="Path 817"
-                                d="M15.047 23.489a1.469 1.469 0 01-1.468-1.468v-.693a5.853 5.853 0 01-3.337-2.149 1.468 1.468 0 012.337-1.775 2.9 2.9 0 002.289 1.135h.121c1.519 0 2.631-.824 2.631-1.562s-1.1-1.558-2.57-1.558c-3.036 0-5.5-2.018-5.5-4.5 0-2.059 1.662-3.8 4.036-4.332v-.715a1.468 1.468 0 112.936 0v.695a5.824 5.824 0 013.331 2.147 1.467 1.467 0 11-2.335 1.778 2.9 2.9 0 00-2.295-1.138h-.117c-1.517 0-2.627.826-2.627 1.562s1.1 1.562 2.568 1.562c3.036 0 5.506 2.016 5.506 4.494 0 2.059-1.664 3.8-4.038 4.332v.714a1.468 1.468 0 01-1.468 1.471z"
-                              ></path>
-                              <path
-                                data-name="Path 818"
-                                d="M45.287 46.978q-.065 0-.129-.006a1.469 1.469 0 01-1.335-1.593l.2-2.2a4.416 4.416 0 00-3.429-4.7l-7.147-1.588a1.459 1.459 0 01-1.149-1.433V24.305a2.588 2.588 0 00-2.353-2.253 2.227 2.227 0 00-2.049 2.186v17.991a1.468 1.468 0 01-2.349 1.175l-2.9-2.169a1.534 1.534 0 00-2.145.307 1.542 1.542 0 000 1.838l.928 1.235a1.468 1.468 0 01-2.347 1.764l-.93-1.237a4.468 4.468 0 013.58-7.149 4.423 4.423 0 012.674.891l.542.407V24.219a5.165 5.165 0 014.927-5.107H30.017a5.506 5.506 0 015.2 4.956 1.341 1.341 0 01.008.151v10.059l6 1.335a7.357 7.357 0 015.722 7.834l-.2 2.194a1.457 1.457 0 01-1.46 1.337z"
-                              ></path>
-                            </svg>
-                            Sự thông minh trong việc giữ chân khác hàng
-                          </button>
-                          <div
-                            id="flush-collapseOnetwo"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOnetwo"
-                            data-bs-parent="#accordionFlushExample2"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Make online booking convenient for your fitness
-                                club members. Our Client Portal integrates with
-                                your website to streamline all personal
-                                training, fitness facility, and class bookings
-                                on any device. Members can also manage all
-                                aspects of their accounts including
-                                registration, contract renewals, payments, and
-                                more.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <button
-                            id="flush-headingTwotwo"
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwotwo"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseTwotwo"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24.01"
-                              viewBox="0 0 24 24.01"
-                              class="pg-icon pg-acc_item-title-text-icon"
-                            >
-                              <g transform="translate(0 .012)">
-                                <path
-                                  d="M3.75 24A3.754 3.754 0 010 20.248v-1.5A.75.75 0 01.75 18h.75V8.248A2.252 2.252 0 013.75 6H7.5a.75.75 0 010 1.5H3.75a.751.751 0 00-.75.75V18h6.416a.751.751 0 01.651.378 2.226 2.226 0 003.865 0 .753.753 0 01.651-.378H21v-2.25a.75.75 0 011.5 0V18h.75a.75.75 0 01.75.75v1.5A3.754 3.754 0 0120.25 24zM1.5 20.248A2.252 2.252 0 003.75 22.5h16.5a2.252 2.252 0 002.25-2.25v-.75h-7.512a3.726 3.726 0 01-5.976 0H1.5z"
-                                ></path>
-                                <path
-                                  d="M9.013 14.748a.75.75 0 01-.672-1.082L10.25 9.79a7.109 7.109 0 018.6-9.509l.028.007a7.137 7.137 0 11-5.226 13.22L9.213 14.72a.7.7 0 01-.2.028zM16.828 1.49a5.616 5.616 0 00-5.073 8 .748.748 0 01-.006.65l-1.328 2.7 3.116-.851a.755.755 0 01.565.07 5.637 5.637 0 104.377-10.32l-.039-.011a5.593 5.593 0 00-1.612-.238z"
-                                ></path>
-                                <path
-                                  d="M14.625 6a1.123 1.123 0 01-.109-2.241.77.77 0 01.109-.009h.077A1.123 1.123 0 0114.625 6z"
-                                ></path>
-                                <circle
-                                  cx="1.125"
-                                  cy="1.125"
-                                  r="1.125"
-                                  transform="translate(18 3.748)"
-                                ></circle>
-                                <path
-                                  d="M17.049 11.255c-.058 0-.116 0-.174-.005s-.115.005-.172.005a3.228 3.228 0 01-3.2-2.944.75.75 0 01.685-.81h.062a.756.756 0 01.75.686 1.718 1.718 0 001.7 1.569c.041 0 .082 0 .123-.005H17.048a1.721 1.721 0 001.706-1.568.754.754 0 01.746-.683h.063a.75.75 0 01.685.81 3.227 3.227 0 01-3.199 2.945z"
-                                ></path>
-                              </g>
-                            </svg>
-                            Thanh toán định kỳ
-                          </button>
-                          <div
-                            id="flush-collapseTwotwo"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingTwotwo"
-                            data-bs-parent="#accordionFlushExample2"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Alleviate pressure on your reception desk with a
-                                club kiosk capable of handling club membership
-                                management and registration at your facility. A
-                                great solution for clubs with 24/7 access
-                                controls for client acquisition at any time.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <button
-                            id="flush-headingThreetwo"
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThreetwo"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseThreetwo"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="23.625"
-                              viewBox="0 0 24 23.625"
-                              class="pg-icon pg-acc_item-title-text-icon"
-                            >
-                              <path
-                                d="M19.5 6.749a3.375 3.375 0 113.375-3.375A3.379 3.379 0 0119.5 6.749zm0-5.25a1.875 1.875 0 101.875 1.875A1.877 1.877 0 0019.5 1.499zM19.5 23.625a3 3 0 01-3-3v-3.128a2.26 2.26 0 01-1.5-2.122v-4.5a3.754 3.754 0 013.75-3.75h1.5a3.754 3.754 0 013.75 3.75v4.5a2.26 2.26 0 01-1.5 2.122v3.128a3 3 0 01-3 3zm-.75-15a2.252 2.252 0 00-2.25 2.25v4.5a.75.75 0 00.75.75.75.75 0 01.75.75v3.75a1.5 1.5 0 003 0v-3.75a.75.75 0 01.75-.75.75.75 0 00.75-.75v-4.5a2.252 2.252 0 00-2.25-2.25zM6 6.749a3.375 3.375 0 113.375-3.375A3.379 3.379 0 016 6.749zm0-5.25a1.875 1.875 0 101.875 1.875A1.877 1.877 0 006 1.499zM6 23.625a3 3 0 01-3-3v-3H.75a.751.751 0 01-.712-.988L1.5 12.253v-1.378a3.754 3.754 0 013.75-3.75h1.5a3.754 3.754 0 013.75 3.75v1.378l1.461 4.384a.749.749 0 01-.711.987H9v3a3 3 0 01-3 3.001zm-2.25-7.5a.75.75 0 01.75.75v3.75a1.5 1.5 0 003 0v-3.75a.75.75 0 01.75-.75h1.959l-1.17-3.513A.732.732 0 019 12.375v-1.5a2.252 2.252 0 00-2.25-2.25h-1.5A2.253 2.253 0 003 10.875v1.5a.742.742 0 01-.039.238L1.79 16.125zM10.637 6.136a.37.37 0 01-.265-.11l-.531-.53a.376.376 0 01-.11-.265.372.372 0 01.11-.265 2.25 2.25 0 000-3.182A.751.751 0 0110.9.722a3.752 3.752 0 010 5.3.374.374 0 01-.263.114z"
-                              ></path>
-                              <path
-                                d="M15.129 6.246a.743.743 0 01-.53-.22 3.753 3.753 0 010-5.3.75.75 0 111.06 1.06 2.25 2.25 0 000 3.182.751.751 0 01-.53 1.281z"
-                              ></path>
-                            </svg>
-                            Sự tự động
-                          </button>
-                          <div
-                            id="flush-collapseThreetwo"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingThreetwo"
-                            data-bs-parent="#accordionFlushExample2"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Existing gym members can book classes and refer
-                                friends or family at any time. Additionally, new
-                                members can download your gym's mobile app,
-                                sign-up, or find your other clubs at any time
-                                with our club finder feature.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="site-content my-md-5 my-4">
-        <div class="container">
-          <div class="section-content__wrapper py-md-5 py-4">
-            <div class="row gx-md-5 d-flex align-items-center">
-              <div class="col-md-6" data-aos="fade-right">
-                <div class="content-cover">
-                  <div class="content-cover__wrapper">
-                    <div class="cover-item">
-                      <figure>
-                        <img
-                          src="./assets/images/img-test.webp"
-                          class="img-fluid"
-                          alt="Doanh số và hiệu suất"
-                        />
-                      </figure>
-                      <figure>
-                        <img
-                          src="./assets/images/bg-test.webp"
-                          class="img-fluid"
-                          alt="Doanh số và hiệu suất"
-                        />
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6" data-aos="fade-left">
-                <div class="content-main p-lg-5 p-4 m-xl-5">
-                  <div class="content-main__wrapper">
-                    <div class="main-item">
-                      <h2 class="fm-heading-2 c-default">Sales & Marketing</h2>
-                      <p class="fs-28 mt-md-4 mt-3 pt-2 item-sub">
-                        Tăng doanh số bán hàng và hiệu suất tiếp thị cho câu lạc
-                        bộ thể dục của bạn với một nền tảng được thiết kế để
-                        tăng tỷ lệ thu hút thành viên câu lạc bộ.
-                      </p>
-                      <div
-                        class="accordion mt-md-4 mt-4 ms-md-3"
-                        id="accordionFlushExample3"
-                      >
-                        <div class="accordion-item">
-                          <button
-                            id="flush-headingOnethree"
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOnethree"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseOnethree"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="46.973"
-                              height="46.98"
-                              viewBox="0 0 46.973 46.98"
-                              class="pg-icon pg-acc_item-title-text-icon"
-                            >
-                              <path
-                                data-name="Path 816"
-                                d="M2.417 46.98A2.447 2.447 0 010 44.655V38.305v-.061-.074a1.458 1.458 0 01.112-.56 2.348 2.348 0 01.518-.91l4.58-5.05a2.554 2.554 0 011.83-.82h12.045v-2.937H4.4a4.408 4.408 0 01-4.4-4.4V4.4A4.41 4.41 0 014.4 0h35.238a4.408 4.408 0 014.4 4.4v19.089a4.408 4.408 0 01-4.4 4.4 1.468 1.468 0 010-2.936 1.469 1.469 0 001.468-1.468V4.4a1.469 1.469 0 00-1.468-1.468H4.4A1.47 1.47 0 002.936 4.4v19.089A1.469 1.469 0 004.4 24.957h16.153a1.469 1.469 0 011.468 1.468V32.3a1.469 1.469 0 01-1.468 1.47H7.256L4.594 36.7h8.619a1.468 1.468 0 010 2.936H2.936v4.4h10.277a1.468 1.468 0 010 2.936H2.5a.6.6 0 01-.083.008z"
-                              ></path>
-                              <path
-                                data-name="Path 817"
-                                d="M15.047 23.489a1.469 1.469 0 01-1.468-1.468v-.693a5.853 5.853 0 01-3.337-2.149 1.468 1.468 0 012.337-1.775 2.9 2.9 0 002.289 1.135h.121c1.519 0 2.631-.824 2.631-1.562s-1.1-1.558-2.57-1.558c-3.036 0-5.5-2.018-5.5-4.5 0-2.059 1.662-3.8 4.036-4.332v-.715a1.468 1.468 0 112.936 0v.695a5.824 5.824 0 013.331 2.147 1.467 1.467 0 11-2.335 1.778 2.9 2.9 0 00-2.295-1.138h-.117c-1.517 0-2.627.826-2.627 1.562s1.1 1.562 2.568 1.562c3.036 0 5.506 2.016 5.506 4.494 0 2.059-1.664 3.8-4.038 4.332v.714a1.468 1.468 0 01-1.468 1.471z"
-                              ></path>
-                              <path
-                                data-name="Path 818"
-                                d="M45.287 46.978q-.065 0-.129-.006a1.469 1.469 0 01-1.335-1.593l.2-2.2a4.416 4.416 0 00-3.429-4.7l-7.147-1.588a1.459 1.459 0 01-1.149-1.433V24.305a2.588 2.588 0 00-2.353-2.253 2.227 2.227 0 00-2.049 2.186v17.991a1.468 1.468 0 01-2.349 1.175l-2.9-2.169a1.534 1.534 0 00-2.145.307 1.542 1.542 0 000 1.838l.928 1.235a1.468 1.468 0 01-2.347 1.764l-.93-1.237a4.468 4.468 0 013.58-7.149 4.423 4.423 0 012.674.891l.542.407V24.219a5.165 5.165 0 014.927-5.107H30.017a5.506 5.506 0 015.2 4.956 1.341 1.341 0 01.008.151v10.059l6 1.335a7.357 7.357 0 015.722 7.834l-.2 2.194a1.457 1.457 0 01-1.46 1.337z"
-                              ></path>
-                            </svg>
-                            Hệ thống điểm bán hàng
-                          </button>
-                          <div
-                            id="flush-collapseOnethree"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOnethree"
-                            data-bs-parent="#accordionFlushExample3"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Make online booking convenient for your fitness
-                                club members. Our Client Portal integrates with
-                                your website to streamline all personal
-                                training, fitness facility, and class bookings
-                                on any device. Members can also manage all
-                                aspects of their accounts including
-                                registration, contract renewals, payments, and
-                                more.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <button
-                            id="flush-headingTwothree"
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwothree"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseTwothree"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24.01"
-                              viewBox="0 0 24 24.01"
-                              class="pg-icon pg-acc_item-title-text-icon"
-                            >
-                              <g transform="translate(0 .012)">
-                                <path
-                                  d="M3.75 24A3.754 3.754 0 010 20.248v-1.5A.75.75 0 01.75 18h.75V8.248A2.252 2.252 0 013.75 6H7.5a.75.75 0 010 1.5H3.75a.751.751 0 00-.75.75V18h6.416a.751.751 0 01.651.378 2.226 2.226 0 003.865 0 .753.753 0 01.651-.378H21v-2.25a.75.75 0 011.5 0V18h.75a.75.75 0 01.75.75v1.5A3.754 3.754 0 0120.25 24zM1.5 20.248A2.252 2.252 0 003.75 22.5h16.5a2.252 2.252 0 002.25-2.25v-.75h-7.512a3.726 3.726 0 01-5.976 0H1.5z"
-                                ></path>
-                                <path
-                                  d="M9.013 14.748a.75.75 0 01-.672-1.082L10.25 9.79a7.109 7.109 0 018.6-9.509l.028.007a7.137 7.137 0 11-5.226 13.22L9.213 14.72a.7.7 0 01-.2.028zM16.828 1.49a5.616 5.616 0 00-5.073 8 .748.748 0 01-.006.65l-1.328 2.7 3.116-.851a.755.755 0 01.565.07 5.637 5.637 0 104.377-10.32l-.039-.011a5.593 5.593 0 00-1.612-.238z"
-                                ></path>
-                                <path
-                                  d="M14.625 6a1.123 1.123 0 01-.109-2.241.77.77 0 01.109-.009h.077A1.123 1.123 0 0114.625 6z"
-                                ></path>
-                                <circle
-                                  cx="1.125"
-                                  cy="1.125"
-                                  r="1.125"
-                                  transform="translate(18 3.748)"
-                                ></circle>
-                                <path
-                                  d="M17.049 11.255c-.058 0-.116 0-.174-.005s-.115.005-.172.005a3.228 3.228 0 01-3.2-2.944.75.75 0 01.685-.81h.062a.756.756 0 01.75.686 1.718 1.718 0 001.7 1.569c.041 0 .082 0 .123-.005H17.048a1.721 1.721 0 001.706-1.568.754.754 0 01.746-.683h.063a.75.75 0 01.685.81 3.227 3.227 0 01-3.199 2.945z"
-                                ></path>
-                              </g>
-                            </svg>
-                            Công cụ khuyến nghị
-                          </button>
-                          <div
-                            id="flush-collapseTwothree"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingTwothree"
-                            data-bs-parent="#accordionFlushExample3"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Alleviate pressure on your reception desk with a
-                                club kiosk capable of handling club membership
-                                management and registration at your facility. A
-                                great solution for clubs with 24/7 access
-                                controls for client acquisition at any time.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <button
-                            id="flush-headingThreethree"
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThreethree"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseThreethree"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="23.625"
-                              viewBox="0 0 24 23.625"
-                              class="pg-icon pg-acc_item-title-text-icon"
-                            >
-                              <path
-                                d="M19.5 6.749a3.375 3.375 0 113.375-3.375A3.379 3.379 0 0119.5 6.749zm0-5.25a1.875 1.875 0 101.875 1.875A1.877 1.877 0 0019.5 1.499zM19.5 23.625a3 3 0 01-3-3v-3.128a2.26 2.26 0 01-1.5-2.122v-4.5a3.754 3.754 0 013.75-3.75h1.5a3.754 3.754 0 013.75 3.75v4.5a2.26 2.26 0 01-1.5 2.122v3.128a3 3 0 01-3 3zm-.75-15a2.252 2.252 0 00-2.25 2.25v4.5a.75.75 0 00.75.75.75.75 0 01.75.75v3.75a1.5 1.5 0 003 0v-3.75a.75.75 0 01.75-.75.75.75 0 00.75-.75v-4.5a2.252 2.252 0 00-2.25-2.25zM6 6.749a3.375 3.375 0 113.375-3.375A3.379 3.379 0 016 6.749zm0-5.25a1.875 1.875 0 101.875 1.875A1.877 1.877 0 006 1.499zM6 23.625a3 3 0 01-3-3v-3H.75a.751.751 0 01-.712-.988L1.5 12.253v-1.378a3.754 3.754 0 013.75-3.75h1.5a3.754 3.754 0 013.75 3.75v1.378l1.461 4.384a.749.749 0 01-.711.987H9v3a3 3 0 01-3 3.001zm-2.25-7.5a.75.75 0 01.75.75v3.75a1.5 1.5 0 003 0v-3.75a.75.75 0 01.75-.75h1.959l-1.17-3.513A.732.732 0 019 12.375v-1.5a2.252 2.252 0 00-2.25-2.25h-1.5A2.253 2.253 0 003 10.875v1.5a.742.742 0 01-.039.238L1.79 16.125zM10.637 6.136a.37.37 0 01-.265-.11l-.531-.53a.376.376 0 01-.11-.265.372.372 0 01.11-.265 2.25 2.25 0 000-3.182A.751.751 0 0110.9.722a3.752 3.752 0 010 5.3.374.374 0 01-.263.114z"
-                              ></path>
-                              <path
-                                d="M15.129 6.246a.743.743 0 01-.53-.22 3.753 3.753 0 010-5.3.75.75 0 111.06 1.06 2.25 2.25 0 000 3.182.751.751 0 01-.53 1.281z"
-                              ></path>
-                            </svg>
-                            CRM
-                          </button>
-                          <div
-                            id="flush-collapseThreethree"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingThreethree"
-                            data-bs-parent="#accordionFlushExample3"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Existing gym members can book classes and refer
-                                friends or family at any time. Additionally, new
-                                members can download your gym's mobile app,
-                                sign-up, or find your other clubs at any time
-                                with our club finder feature.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="site-content my-md-5 my-4">
-        <div class="container">
-          <div class="section-content__wrapper bg-grey py-md-5 py-4">
-            <div class="row gx-md-5 d-flex align-items-center">
-              <div class="col-md-6 order-1 order-md-2" data-aos="fade-right">
-                <div class="content-cover">
-                  <div class="content-cover__wrapper">
-                    <div class="cover-item">
-                      <figure>
-                        <img
-                          src="./assets/images/pg-section-increase-club-retention-s.a55793c.jpg"
-                          class="img-fluid"
-                          alt="giải pháp phần mềm"
-                        />
-                      </figure>
-                      <figure>
-                        <img
-                          src="./assets/images/pg-section-increase-operations-s.6173811.jpg"
-                          class="img-fluid"
-                          alt="giải pháp phần mềm"
-                        />
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 order-2 order-md-1" data-aos="fade-left">
-                <div class="content-main p-lg-5 p-4 m-xl-5">
-                  <div class="content-main__wrapper">
-                    <div class="main-item">
-                      <h2 class="fm-heading-2 c-default">Hoạt động</h2>
-                      <p class="fs-28 mt-md-4 mt-3 pt-2 item-sub">
-                        Các giải pháp phần mềm quản lý câu lạc bộ sức khỏe và
-                        thể dục của chúng tôi được thiết kế riêng để giúp bạn
-                        điều hành tất cả các khía cạnh hoạt động của câu lạc bộ
-                        một cách dễ dàng.
-                      </p>
-                      <div
-                        class="accordion mt-md-4 mt-4 ms-md-3"
-                        id="accordionFlushExample4"
-                      >
-                        <div class="accordion-item">
-                          <button
-                            id="flush-headingOnefour"
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOnefour"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseOnefour"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="46.973"
-                              height="46.98"
-                              viewBox="0 0 46.973 46.98"
-                              class="pg-icon pg-acc_item-title-text-icon"
-                            >
-                              <path
-                                data-name="Path 816"
-                                d="M2.417 46.98A2.447 2.447 0 010 44.655V38.305v-.061-.074a1.458 1.458 0 01.112-.56 2.348 2.348 0 01.518-.91l4.58-5.05a2.554 2.554 0 011.83-.82h12.045v-2.937H4.4a4.408 4.408 0 01-4.4-4.4V4.4A4.41 4.41 0 014.4 0h35.238a4.408 4.408 0 014.4 4.4v19.089a4.408 4.408 0 01-4.4 4.4 1.468 1.468 0 010-2.936 1.469 1.469 0 001.468-1.468V4.4a1.469 1.469 0 00-1.468-1.468H4.4A1.47 1.47 0 002.936 4.4v19.089A1.469 1.469 0 004.4 24.957h16.153a1.469 1.469 0 011.468 1.468V32.3a1.469 1.469 0 01-1.468 1.47H7.256L4.594 36.7h8.619a1.468 1.468 0 010 2.936H2.936v4.4h10.277a1.468 1.468 0 010 2.936H2.5a.6.6 0 01-.083.008z"
-                              ></path>
-                              <path
-                                data-name="Path 817"
-                                d="M15.047 23.489a1.469 1.469 0 01-1.468-1.468v-.693a5.853 5.853 0 01-3.337-2.149 1.468 1.468 0 012.337-1.775 2.9 2.9 0 002.289 1.135h.121c1.519 0 2.631-.824 2.631-1.562s-1.1-1.558-2.57-1.558c-3.036 0-5.5-2.018-5.5-4.5 0-2.059 1.662-3.8 4.036-4.332v-.715a1.468 1.468 0 112.936 0v.695a5.824 5.824 0 013.331 2.147 1.467 1.467 0 11-2.335 1.778 2.9 2.9 0 00-2.295-1.138h-.117c-1.517 0-2.627.826-2.627 1.562s1.1 1.562 2.568 1.562c3.036 0 5.506 2.016 5.506 4.494 0 2.059-1.664 3.8-4.038 4.332v.714a1.468 1.468 0 01-1.468 1.471z"
-                              ></path>
-                              <path
-                                data-name="Path 818"
-                                d="M45.287 46.978q-.065 0-.129-.006a1.469 1.469 0 01-1.335-1.593l.2-2.2a4.416 4.416 0 00-3.429-4.7l-7.147-1.588a1.459 1.459 0 01-1.149-1.433V24.305a2.588 2.588 0 00-2.353-2.253 2.227 2.227 0 00-2.049 2.186v17.991a1.468 1.468 0 01-2.349 1.175l-2.9-2.169a1.534 1.534 0 00-2.145.307 1.542 1.542 0 000 1.838l.928 1.235a1.468 1.468 0 01-2.347 1.764l-.93-1.237a4.468 4.468 0 013.58-7.149 4.423 4.423 0 012.674.891l.542.407V24.219a5.165 5.165 0 014.927-5.107H30.017a5.506 5.506 0 015.2 4.956 1.341 1.341 0 01.008.151v10.059l6 1.335a7.357 7.357 0 015.722 7.834l-.2 2.194a1.457 1.457 0 01-1.46 1.337z"
-                              ></path>
-                            </svg>
-                            Trang tổng quan & Báo cáo
-                          </button>
-                          <div
-                            id="flush-collapseOnefour"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOnefour"
-                            data-bs-parent="#accordionFlushExample4"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Make online booking convenient for your fitness
-                                club members. Our Client Portal integrates with
-                                your website to streamline all personal
-                                training, fitness facility, and class bookings
-                                on any device. Members can also manage all
-                                aspects of their accounts including
-                                registration, contract renewals, payments, and
-                                more.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <button
-                            id="flush-headingTwofour"
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwofour"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseTwofour"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24.01"
-                              viewBox="0 0 24 24.01"
-                              class="pg-icon pg-acc_item-title-text-icon"
-                            >
-                              <g transform="translate(0 .012)">
-                                <path
-                                  d="M3.75 24A3.754 3.754 0 010 20.248v-1.5A.75.75 0 01.75 18h.75V8.248A2.252 2.252 0 013.75 6H7.5a.75.75 0 010 1.5H3.75a.751.751 0 00-.75.75V18h6.416a.751.751 0 01.651.378 2.226 2.226 0 003.865 0 .753.753 0 01.651-.378H21v-2.25a.75.75 0 011.5 0V18h.75a.75.75 0 01.75.75v1.5A3.754 3.754 0 0120.25 24zM1.5 20.248A2.252 2.252 0 003.75 22.5h16.5a2.252 2.252 0 002.25-2.25v-.75h-7.512a3.726 3.726 0 01-5.976 0H1.5z"
-                                ></path>
-                                <path
-                                  d="M9.013 14.748a.75.75 0 01-.672-1.082L10.25 9.79a7.109 7.109 0 018.6-9.509l.028.007a7.137 7.137 0 11-5.226 13.22L9.213 14.72a.7.7 0 01-.2.028zM16.828 1.49a5.616 5.616 0 00-5.073 8 .748.748 0 01-.006.65l-1.328 2.7 3.116-.851a.755.755 0 01.565.07 5.637 5.637 0 104.377-10.32l-.039-.011a5.593 5.593 0 00-1.612-.238z"
-                                ></path>
-                                <path
-                                  d="M14.625 6a1.123 1.123 0 01-.109-2.241.77.77 0 01.109-.009h.077A1.123 1.123 0 0114.625 6z"
-                                ></path>
-                                <circle
-                                  cx="1.125"
-                                  cy="1.125"
-                                  r="1.125"
-                                  transform="translate(18 3.748)"
-                                ></circle>
-                                <path
-                                  d="M17.049 11.255c-.058 0-.116 0-.174-.005s-.115.005-.172.005a3.228 3.228 0 01-3.2-2.944.75.75 0 01.685-.81h.062a.756.756 0 01.75.686 1.718 1.718 0 001.7 1.569c.041 0 .082 0 .123-.005H17.048a1.721 1.721 0 001.706-1.568.754.754 0 01.746-.683h.063a.75.75 0 01.685.81 3.227 3.227 0 01-3.199 2.945z"
-                                ></path>
-                              </g>
-                            </svg>
-                            Tích hợp thể dục
-                          </button>
-                          <div
-                            id="flush-collapseTwofour"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingTwofour"
-                            data-bs-parent="#accordionFlushExample4"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Alleviate pressure on your reception desk with a
-                                club kiosk capable of handling club membership
-                                management and registration at your facility. A
-                                great solution for clubs with 24/7 access
-                                controls for client acquisition at any time.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <button
-                            id="flush-headingThreefour"
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThreefour"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseThreefour"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="23.625"
-                              viewBox="0 0 24 23.625"
-                              class="pg-icon pg-acc_item-title-text-icon"
-                            >
-                              <path
-                                d="M19.5 6.749a3.375 3.375 0 113.375-3.375A3.379 3.379 0 0119.5 6.749zm0-5.25a1.875 1.875 0 101.875 1.875A1.877 1.877 0 0019.5 1.499zM19.5 23.625a3 3 0 01-3-3v-3.128a2.26 2.26 0 01-1.5-2.122v-4.5a3.754 3.754 0 013.75-3.75h1.5a3.754 3.754 0 013.75 3.75v4.5a2.26 2.26 0 01-1.5 2.122v3.128a3 3 0 01-3 3zm-.75-15a2.252 2.252 0 00-2.25 2.25v4.5a.75.75 0 00.75.75.75.75 0 01.75.75v3.75a1.5 1.5 0 003 0v-3.75a.75.75 0 01.75-.75.75.75 0 00.75-.75v-4.5a2.252 2.252 0 00-2.25-2.25zM6 6.749a3.375 3.375 0 113.375-3.375A3.379 3.379 0 016 6.749zm0-5.25a1.875 1.875 0 101.875 1.875A1.877 1.877 0 006 1.499zM6 23.625a3 3 0 01-3-3v-3H.75a.751.751 0 01-.712-.988L1.5 12.253v-1.378a3.754 3.754 0 013.75-3.75h1.5a3.754 3.754 0 013.75 3.75v1.378l1.461 4.384a.749.749 0 01-.711.987H9v3a3 3 0 01-3 3.001zm-2.25-7.5a.75.75 0 01.75.75v3.75a1.5 1.5 0 003 0v-3.75a.75.75 0 01.75-.75h1.959l-1.17-3.513A.732.732 0 019 12.375v-1.5a2.252 2.252 0 00-2.25-2.25h-1.5A2.253 2.253 0 003 10.875v1.5a.742.742 0 01-.039.238L1.79 16.125zM10.637 6.136a.37.37 0 01-.265-.11l-.531-.53a.376.376 0 01-.11-.265.372.372 0 01.11-.265 2.25 2.25 0 000-3.182A.751.751 0 0110.9.722a3.752 3.752 0 010 5.3.374.374 0 01-.263.114z"
-                              ></path>
-                              <path
-                                d="M15.129 6.246a.743.743 0 01-.53-.22 3.753 3.753 0 010-5.3.75.75 0 111.06 1.06 2.25 2.25 0 000 3.182.751.751 0 01-.53 1.281z"
-                              ></path>
-                            </svg>
-                            Quản lý nhân viên
-                          </button>
-                          <div
-                            id="flush-collapseThreefour"
-                            class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingThreefour"
-                            data-bs-parent="#accordionFlushExample4"
-                          >
-                            <div class="accordion-body">
-                              <p>
-                                Existing gym members can book classes and refer
-                                friends or family at any time. Additionally, new
-                                members can download your gym's mobile app,
-                                sign-up, or find your other clubs at any time
-                                with our club finder feature.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- BANNER-BOTTOM -->
-      <section class="site-banner-bottom my-md-5 my-4 py-md-5 py-4">
-        <div class="container">
-          <div class="banner-bottom__wrapper">
-            <h2 class="fm-heading-2 text-center">Tính năng của App</h2>
-            <div class="line mt-4 mb-5"></div>
-            <div class="row gx-md-5">
-              <div
-                class="col-xl-3 col-6"
-                data-aos="fade-down"
-                data-aos-delay="700"
-              >
-                <div class="item-bottom">
-                  <figure>
-                    <img
-                      src="./assets/images/banner.png"
-                      class="img-fluid"
-                      alt="App Gym Vision"
-                    />
-                  </figure>
-                  <div class="content">
-                    <h3 class="fm-heading-3 fw-bold my-3 c-default">
-                      Gym Vision của brand
-                    </h3>
-                    <p>
-                      Doanh nghiệp sở hữu app chăm sóc khách hàng riêng, với tất
-                      cả tính năng tích điểm, ưu đãi, đẩy tin nhắn...
-                    </p>
-                  </div>
-                  <div class="btn-scroll">
-                    <a href="#">
-                      <span> Xem thêm </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-xl-3 col-6"
-                data-aos="fade-down"
-                data-aos-delay="500"
-              >
-                <div class="item-bottom">
-                  <figure>
-                    <img
-                      src="./assets/images/banner.png"
-                      class="img-fluid"
-                      alt="App Gym Vision"
-                    />
-                  </figure>
-                  <div class="content">
-                    <h3 class="fm-heading-3 fw-bold my-3 c-default">
-                      Gym Vision của brand
-                    </h3>
-                    <p>
-                      Doanh nghiệp sở hữu app chăm sóc khách hàng riêng, với tất
-                      cả tính năng tích điểm, ưu đãi, đẩy tin nhắn...
-                    </p>
-                  </div>
-                  <div class="btn-scroll">
-                    <a href="#">
-                      <span> Xem thêm </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-xl-3 col-6"
-                data-aos="fade-down"
-                data-aos-delay="400"
-              >
-                <div class="item-bottom">
-                  <figure>
-                    <img
-                      src="./assets/images/banner.png"
-                      class="img-fluid"
-                      alt="App Gym Vision"
-                    />
-                  </figure>
-                  <div class="content">
-                    <h3 class="fm-heading-3 fw-bold my-3 c-default">
-                      Gym Vision của brand
-                    </h3>
-                    <p>
-                      Doanh nghiệp sở hữu app chăm sóc khách hàng riêng, với tất
-                      cả tính năng tích điểm, ưu đãi, đẩy tin nhắn...
-                    </p>
-                  </div>
-                  <div class="btn-scroll">
-                    <a href="#">
-                      <span> Xem thêm </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-xl-3 col-6"
-                data-aos="fade-down"
-                data-aos-delay="700"
-              >
-                <div class="item-bottom">
-                  <figure>
-                    <img
-                      src="./assets/images/banner.png"
-                      class="img-fluid"
-                      alt="App Gym Vision"
-                    />
-                  </figure>
-                  <div class="content">
-                    <h3 class="fm-heading-3 fw-bold my-3 c-default">
-                      Gym Vision của brand
-                    </h3>
-                    <p>
-                      Doanh nghiệp sở hữu app chăm sóc khách hàng riêng, với tất
-                      cả tính năng tích điểm, ưu đãi, đẩy tin nhắn...
-                    </p>
-                  </div>
-                  <div class="btn-scroll">
-                    <a href="#">
-                      <span> Xem thêm </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- SITE CASE -->
-      <section class="site-case mt-md-5 mt-4 py-4" data-aos="fade-up">
-        <div class="container">
-          <div class="site-case__wrapper py-md-4 py-3">
-            <div class="text-center">
-              <h2 class="fm-heading-2 c-white">Case study điển hình</h2>
-              <div class="line my-4"></div>
-            </div>
-            <div class="position-relative mt-md-5 mt-4">
-              <div class="btn-prev">
-                <i class="fa fa-angle-left" aria-hidden="true"></i>
-              </div>
-              <div class="btn-next">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
-              </div>
-              <div class="case-slide py-4">
-                <div class="case-item">
-                  <figure>
-                    <img
-                      src="./assets/images/9.jpeg"
-                      class="img-fluid"
-                      alt="Body build"
-                    />
-                  </figure>
-                </div>
-                <div class="case-item">
-                  <figure>
-                    <img
-                      src="./assets/images/8.jpeg"
-                      class="img-fluid"
-                      alt="Body build"
-                    />
-                  </figure>
-                </div>
-                <div class="case-item">
-                  <figure>
-                    <img
-                      src="./assets/images/7.jpeg"
-                      class="img-fluid"
-                      alt="Body build"
-                    />
-                  </figure>
-                </div>
-                <div class="case-item">
-                  <figure>
-                    <img
-                      src="./assets/images/3.jpeg"
-                      class="img-fluid"
-                      alt="Body build"
-                    />
-                  </figure>
-                </div>
-                <div class="case-item">
-                  <figure>
-                    <img
-                      src="./assets/images/2.jpeg"
-                      class="img-fluid"
-                      alt="Body build"
-                    />
-                  </figure>
-                </div>
-                <div class="case-item">
-                  <figure>
-                    <img
-                      src="./assets/images/10.jpeg"
-                      class="img-fluid"
-                      alt="Body build"
-                    />
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- SITE FEATURE -->
-      <!-- <section class="site-feature mt-md-5 mt-4 py-4">
-        <div class="container">
-          <div class="site-feature__wrapper">
-            <div class="text-center">
-              <h2 class="fm-heading-2">Những tính năng nổi bật</h2>
-              <div class="line my-4"></div>
-            </div>
-            <div class="main-feature my-md-5 my-4 py-md-5 py-4 ">
-              <div class="row d-flex justify-content-center">
-                <div class="col-md-11">
-                  <div class="row d-flex align-items-center">
-                    <div class="col-md-3" data-aos="fade-right" data-aos-delay="1200">
-                      <div class="main-feature__wrapper">
-                        <div class="row gy-5" >
-                          <div class="col-12" >
-                            <div class="feature-item text-center">
-                              <figure>
-                                <img
-                                  src="./assets/images/icon-tich-diem.png"
-                                  class="img-fluid"
-                                  alt=""
-                                />
-                              </figure>
-                              <h3 class="fm-heading-3 text-uppercase">
-                                Tích điểm, tạo ưu đãi, đổi thưởng
-                              </h3>
-                              <p class="my-4">
-                                Tự động hoá quá trình thông báo ưu đãi đến khách
-                                hàng, sử dụng ưu đãi và tích điểm. ...
-                              </p>
-                              <div class="see-more">
-                                <a href="#"> <span>Xem thêm</span></a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <div class="feature-item text-center">
-                              <figure>
-                                <img
-                                  src="./assets/images/icon-tich-diem.png"
-                                  class="img-fluid"
-                                  alt=""
-                                />
-                              </figure>
-                              <h3 class="fm-heading-3 text-uppercase">
-                                Tích điểm, tạo ưu đãi, đổi thưởng
-                              </h3>
-                              <p class="my-4">
-                                Tự động hoá quá trình thông báo ưu đãi đến khách
-                                hàng, sử dụng ưu đãi và tích điểm. ...
-                              </p>
-                              <div class="see-more">
-                                <a href="#"> <span>Xem thêm</span></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6" data-aos="zoom-out">
-                      <div class="feature-main__wrapper">
-                        <figure class="feature-cover text-center">
-                          <img
-                            src="./assets/images/giai-phap-doanh-nghiep.png"
-                            class="img-fluid"
-                            alt=""
-                          />
-                        </figure>
-                      </div>
-                    </div>
-                    <div class="col-md-3" data-aos="fade-left" data-aos-delay="1200">
-                      <div class="main-feature__wrapper">
-                        <div class="row gy-5">
-                          <div class="col-12">
-                            <div class="feature-item text-center">
-                              <figure>
-                                <img
-                                  src="./assets/images/icon-tich-diem.png"
-                                  class="img-fluid"
-                                  alt=""
-                                />
-                              </figure>
-                              <h3 class="fm-heading-3 text-uppercase">
-                                Tích điểm, tạo ưu đãi, đổi thưởng
-                              </h3>
-                              <p class="my-4">
-                                Tự động hoá quá trình thông báo ưu đãi đến khách
-                                hàng, sử dụng ưu đãi và tích điểm. ...
-                              </p>
-                              <div class="see-more">
-                                <a href="#"> <span>Xem thêm</span></a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <div class="feature-item text-center">
-                              <figure>
-                                <img
-                                  src="./assets/images/icon-tich-diem.png"
-                                  class="img-fluid"
-                                  alt=""
-                                />
-                              </figure>
-                              <h3 class="fm-heading-3 text-uppercase">
-                                Tích điểm, tạo ưu đãi, đổi thưởng
-                              </h3>
-                              <p class="my-4">
-                                Tự động hoá quá trình thông báo ưu đãi đến khách
-                                hàng, sử dụng ưu đãi và tích điểm. ...
-                              </p>
-                              <div class="see-more">
-                                <a href="#"> <span>Xem thêm</span></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-    </div>
-    <!-- FOOTER -->
-    <footer>
-      <div class="footer-wrapper" data-aos="fade-up">
-        <div class="container">
-          <div class="footer-main py-md-5 py-4">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="footer-main__info">
-                  <div
-                    class="group-logo mb-md-5 mb-4 d-flex justify-content-center"
-                  >
-                    <figure>
-                      <img
-                        src="./assets/images/LOGO-DESIGN-WHITE-03.png"
-                        class="img-fluid"
-                        alt="Logo Gym Vision"
-                      />
-                    </figure>
-                    <figure>
-                      <img
-                        src="./assets/images/LOGO-DESIGN_text-03.png"
-                        class="img-fluid"
-                        alt="Logo chữ Gym Vision"
-                      />
-                    </figure>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-4">
-                <div class="footer-main__info">
-                  <div class="mb-4 info-item">
-                    <h4 class="fm-heading-4 fw-bold mb-md-4 mb-3">Liên hệ</h4>
-                    <ul>
-                      <li>
-                        <span>
-                          Địa chỉ: 546 Lê Văn Lương, quận 7, TP. Hồ Chí Minh
-                        </span>
-                      </li>
-                      <li>
-                        <span>Hotline: 1900 63 69 20</span>
-                      </li>
-                      <li>
-                        <span>Email: cskh@thenewgym.vn</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="info-social">
-                    <ul>
-                      <li>
-                        <a
-                          href="https://www.facebook.com/thenewgymvietnam"
-                          class="fb"
-                          target="_blank"
-                        >
-                          <i class="fa fa-facebook" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.instagram.com/thenewgymvietnam/"
-                          class="ig"
-                          target="_blank"
-                        >
-                          <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.youtube.com/channel/UCyaqJrVs1bQro7Od4Pnw2cQ"
-                          class="utube"
-                          target="_blank"
-                        >
-                          <i class="fa fa-youtube" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-8">
-                <div class="footer-main__map">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="site-map">
-                        <h4 class="fm-heading-4 mb-md-4 mb-3 fw-bold accordion">
-                          Về chúng tôi
-                        </h4>
-                        <ul class="accorlist">
-                          <li>
-                            <a href="#">Gói thành viên</a>
-                          </li>
-                          <li>
-                            <a href="#">Lịch lớp Yoga và Group X</a>
-                          </li>
-                          <li>
-                            <a href="#">Trang thiết bị</a>
-                          </li>
-                          <li>
-                            <a href="#">Huấn luyện viên</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="site-map">
-                        <h4 class="fm-heading-4 mb-md-4 mb-3 fw-bold accordion">
-                          Doanh nghiệp
-                        </h4>
-                        <ul class="accorlist">
-                          <li>
-                            <a href="#">Nhu cầu mặt bằng</a>
-                          </li>
-                          <li>
-                            <a href="#">Gói tập doanh nghiệp</a>
-                          </li>
-                          <li>
-                            <a href="#">Cơ hội nghề nghiệp</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="site-map">
-                        <h4 class="fm-heading-4 mb-md-4 mb-3 fw-bold accordion">
-                          Chính sách
-                        </h4>
-                        <ul class="accorlist">
-                          <li>
-                            <a href="#">Điều khoản và điều kiện</a>
-                          </li>
-                          <li>
-                            <a href="#">Chính sách bảo mật</a>
-                          </li>
-                          <li>
-                            <a href="#">Quy định sử dụng</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright py-4">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="footer-copyright__inner">
-                  <div class="footer-copyright__inner-content">
-                    <p>© Copyright 2020 by THENEWGYM. All rights reserved.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </footer>
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-wrapper" data-aos="fade-up">
+          <div class="container">
+            <div class="footer-main py-md-5 py-4">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="footer-main__info">
+                    <div
+                      class="group-logo mb-md-5 mb-4 d-flex justify-content-center"
+                    >
+                      <figure>
+                        <img
+                          src="./assets/images/LOGO-DESIGN-WHITE-03.png"
+                          class="img-fluid"
+                          alt="Logo Gym Vision"
+                        />
+                      </figure>
+                      <figure>
+                        <img
+                          src="./assets/images/LOGO-DESIGN_text-03.png"
+                          class="img-fluid"
+                          alt="Logo chữ Gym Vision"
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-4">
+                  <div class="footer-main__info">
+                    <div class="mb-4 info-item">
+                      <h4 class="fm-heading-4 fw-bold mb-md-4 mb-3">Liên hệ</h4>
+                      <ul>
+                        <li>
+                          <span>
+                            Địa chỉ: 546 Lê Văn Lương, quận 7, TP. Hồ Chí Minh
+                          </span>
+                        </li>
+                        <li>
+                          <span>Hotline: 1900 63 69 20</span>
+                        </li>
+                        <li>
+                          <span>Email: cskh@thenewgym.vn</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="info-social">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://www.facebook.com/thenewgymvietnam"
+                            class="fb"
+                            target="_blank"
+                          >
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.instagram.com/thenewgymvietnam/"
+                            class="ig"
+                            target="_blank"
+                          >
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.youtube.com/channel/UCyaqJrVs1bQro7Od4Pnw2cQ"
+                            class="utube"
+                            target="_blank"
+                          >
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-8">
+                  <div class="footer-main__map">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="site-map">
+                          <h4 class="fm-heading-4 mb-md-4 mb-3 fw-bold accordion">
+                            Về chúng tôi
+                          </h4>
+                          <ul class="accorlist">
+                            <li>
+                              <a href="#">Gói thành viên</a>
+                            </li>
+                            <li>
+                              <a href="#">Lịch lớp Yoga và Group X</a>
+                            </li>
+                            <li>
+                              <a href="#">Trang thiết bị</a>
+                            </li>
+                            <li>
+                              <a href="#">Huấn luyện viên</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="site-map">
+                          <h4 class="fm-heading-4 mb-md-4 mb-3 fw-bold accordion">
+                            Doanh nghiệp
+                          </h4>
+                          <ul class="accorlist">
+                            <li>
+                              <a href="#">Nhu cầu mặt bằng</a>
+                            </li>
+                            <li>
+                              <a href="#">Gói tập doanh nghiệp</a>
+                            </li>
+                            <li>
+                              <a href="#">Cơ hội nghề nghiệp</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="site-map">
+                          <h4 class="fm-heading-4 mb-md-4 mb-3 fw-bold accordion">
+                            Chính sách
+                          </h4>
+                          <ul class="accorlist">
+                            <li>
+                              <a href="#">Điều khoản và điều kiện</a>
+                            </li>
+                            <li>
+                              <a href="#">Chính sách bảo mật</a>
+                            </li>
+                            <li>
+                              <a href="#">Quy định sử dụng</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright py-4">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="footer-copyright__inner">
+                    <div class="footer-copyright__inner-content">
+                      <p>© Copyright 2022 by THENEWTECH. All rights reserved.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+   
 
     <!-- MODULE -->
 
@@ -1791,7 +1801,7 @@
                       <label for="mail" class="form-label"
                         >Business E-mail <sup class="c-red">*</sup>
                       </label>
-                      <input type="email" class="form-control" id="mail" />
+                      <input type="email" class="form-control" id="mail"   required />
                     </div>
                     <div class="mb-3">
                       <label for="phone_number" class="form-label"
@@ -1815,6 +1825,7 @@
                           id="phone_number"
                           aria-label="Sizing example input"
                           aria-describedby="inputGroup-sizing-sm"
+                          required
                         />
                       </div>
                     </div>
