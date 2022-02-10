@@ -1,20 +1,6 @@
         
 $(document).ready(function() {
 
-  //LOADING
- 
-  if($(window).width() > 767){
-    setTimeout(function(){
-      $('body').addClass('loaded');
-    }, 1200);
-  } else{
-    setTimeout(function(){
-      $('body').addClass('loaded');
-    }, 0);
-
-  }
-
-
   //MENU
   $('.toggle-menu').click(function () {
     $(this).toggleClass('active');

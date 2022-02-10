@@ -14,7 +14,7 @@ $c-grey: #eff3f7;
 $c-green: rgb(52, 195, 143);
 $c-blue: #2a3042;
 $c-orange: rgb(241, 180, 76);
-$c-red: red;
+$c-red: red; 
 $c-default: rgb(30, 56, 83);
 
 //AL
@@ -289,25 +289,25 @@ $font-awesome: "FontAwesome";
     font-weight: normal;
     @include Responsive(PHONE){
         font-size: 2.8rem;
-        line-height: 3.2rem;
+        line-height: 1;
     }
 }
 .fm-heading-3{
     font-size: 1.8rem;
     font-family: $font-default;
-    line-height: 2.8rem;
+    line-height: 1;
     font-weight: normal;
 }
 .fm-heading-4{
     font-size: 1.8rem;
     font-family: $font-default;
-    line-height: 2.8rem;
+    line-height: 1;
     font-weight: normal;
 }
 .fm-heading-5{
     font-size: 1.6rem;
     font-family: $font-default;
-    line-height: 2.8rem;
+    line-height: 1;
     font-weight: normal;
 
 }
