@@ -1,5 +1,31 @@
         
 $(document).ready(function() {
+  // $(document).on('click','.nav-language li',function (e) {
+  //   e.preventDefault()
+  //   e.stopPropagation()
+  //   // $(this).toggleClass('active');
+  //   const parents = $(this).parent('ul')
+  //   //tao 1 thag li nua
+  //   const a = $(this).clone();
+  //   //xoa thang moi ban
+  //   $(this).remove()
+  //   //
+  //   parents.prepend(a)
+  // });
+
+  const lngNav = $(".nav-language ul")
+  const lngKey = window.location.hash.replace('#','')
+  // console.log('test',lngKey);
+  if(lngKey === 'eng'){
+    const clone = $("#eng").clone();
+    $("#eng").remove();
+    lngNav.prepend(clone);
+  } else {
+    const clone = $("#vi").clone();
+    $("#vi").remove();
+    lngNav.prepend(clone);
+  }
+
 
   //MENU
   $('.toggle-menu').click(function () {
@@ -182,12 +208,12 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-   $('a[href*=\\#]').on('click', function(event) {
-        event.preventDefault();
-        $('html,body').animate({
-            scrollTop: $(this.hash).offset().top - 100
-        }, 500);
-    });
+  //  $('a[href*=\\#]').on('click', function(event) {
+  //       event.preventDefault();
+  //       $('html,body').animate({
+  //           scrollTop: $(this.hash).offset().top - 100
+  //       }, 500);
+  //   });
 
     //EXIT
     

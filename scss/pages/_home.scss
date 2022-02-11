@@ -53,12 +53,11 @@
           text-align: center;
         }
         .fm-heading-1{
-          font-weight: 600;
-          line-height: 1.2;
-          // @include Responsive(PHONE){
-          //   padding:0 24px;
-          // }
-          span{
+          #heading_banner_main{
+            font-weight: 600;
+            line-height: 1.2;
+          }
+          #heading_banner_sub{
             font-size: 4rem;
             font-weight: 300;
             @include Responsive(IPADPRO){
