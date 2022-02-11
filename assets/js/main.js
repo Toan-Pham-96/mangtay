@@ -13,6 +13,7 @@ $(document).ready(function() {
   //   parents.prepend(a)
   // });
 
+setTimeout(()=>{
   const lngNav = $(".nav-language ul")
   const lngKey = window.location.hash.replace('#','')
   // console.log('test',lngKey);
@@ -27,6 +28,7 @@ $(document).ready(function() {
   }
 
 
+},1000)
   //MENU
   $('.toggle-menu').click(function () {
     $(this).toggleClass('active');
