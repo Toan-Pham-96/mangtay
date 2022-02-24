@@ -3,103 +3,18 @@
     font-family: $font-primary;
     color: #fff;
     border-top: 1px solid #e3e3e9;
+    padding: 2rem 0;
     a{
         color: #fff;
        
     }
     .footer-main{
-        &__info{
-            @include Responsive (PHONE){
-                margin-bottom: 2rem;
+        ul{
+            li{
+                text-align: center;
             }
-            .group-logo {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                figure:nth-child(1){
-                    img{
-                        max-height: 10rem;
-                        
-                    }
-                    @include Responsive (PHONE){
-                       img{
-                        max-height: 7rem;
-                       }
-                    }
-                }
-                figure:nth-child(2){
-                    img{
-                        max-height: 4rem;
-                    }
-                    @include Responsive (PHONE){
-                        img{
-                         max-height: 3rem;
-                        }
-                     }
-                }
-            }
-           
-            .info-item{
-              
-                ul{
-                    li:not(:last-child){
-                        margin-bottom: 1.2rem;
-                    }
-                }
-            }
-            .info-social{
-                margin-top: 1.2rem;
-                
-                ul{
-                    display: flex;
-                    li{
-                        a{
-                            border: 1px solid #fff;
-                            height: 3rem;
-                            width: 3rem;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            i{
-                                font-size: 1.9rem;
-                            }
-                        }
-                        .fb{
-                            background: #104f94;
-                        }
-                        .ig{
-                            background: #c32969;
-                        }
-                        .utube{
-                            background: #c30000;
-                        }
-                    }
-                    li:not(:last-child){
-                        margin-right: 10px;
-
-                    }
-                }
-            }
-        }
-        &__map{
-            .site-map{
-                ul{
-                    li:not(:last-child){
-                        margin-bottom: 1.2rem;
-                    }
-                    a{
-                        &:hover{
-                            color: $c-orange;
-                        }
-                        transition: all 0.3s ease;
-                        -webkit-transition: all 0.3s ease;
-                        -moz-transition: all 0.3s ease;
-                        -ms-transition: all 0.3s ease;
-                        -o-transition: all 0.3s ease;
-}
-                }
-                
+            li:not(:last-child){
+                margin-bottom: 6px;
             }
         }
     }

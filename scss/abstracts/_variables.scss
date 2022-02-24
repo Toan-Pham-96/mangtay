@@ -15,7 +15,7 @@ $c-green: rgb(52, 195, 143);
 $c-blue: #2a3042;
 $c-orange: rgb(241, 180, 76);
 $c-red: red; 
-$c-default: rgb(30, 56, 83);
+$c-default: #487e3b;
 
 //AL
 
@@ -267,8 +267,8 @@ $c-primary: #171717;
 //FONT-FAMILY
 
 // font-family: 'George Rounded';
-$font-primary: 'Raleway', sans-serif;
-$font-default: 'Open Sans', sans-serif;
+$font-primary: 'Manrope', sans-serif;
+$font-default: 'Playfair Display', serif;
 $font-awesome: "FontAwesome";
 
 .fm-heading-1{
@@ -283,7 +283,7 @@ $font-awesome: "FontAwesome";
     }
 }
 .fm-heading-2{
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     font-family: $font-default;
     line-height: 4.4rem;
     font-weight: normal;
@@ -299,13 +299,13 @@ $font-awesome: "FontAwesome";
     font-weight: normal;
 }
 .fm-heading-4{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family: $font-default;
     line-height: 1;
     font-weight: normal;
 }
 .fm-heading-5{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-family: $font-default;
     line-height: 1;
     font-weight: normal;
