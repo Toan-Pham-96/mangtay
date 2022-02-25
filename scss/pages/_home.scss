@@ -8,7 +8,6 @@
 .site-banner {
   width: 100vw;
   position: relative;
-  // min-height: 90vh;
   .banner-content {
     position: relative;
     height: 100%;
@@ -43,6 +42,9 @@
         height: 90vh;
         width: 100%;
         object-fit: cover;
+        @include Responsive (PHONE){
+          height: 60vh;
+         }
       }
     }
   }
@@ -80,6 +82,9 @@
   background-repeat: repeat-x;
   // animation: animatedImage 3s linear infinite;
   // -webkit-animation: animatedImage 3s linear infinite;
+  @include Responsive (PHONE){
+    display: none;
+   }
 }
 
 .section-about{
@@ -87,11 +92,17 @@
   .about-img{
     figure{
       position: absolute;
+      @include Responsive (IPAD){
+       position: relative;
+      }
     }
   }
   .about-content{
     padding: 8rem 1.6rem;
     background: $c-default;
+    @include Responsive (IPAD){
+      padding: 4rem 1.6rem;
+     }
     &__inner{
      color: #fff;
     }
@@ -149,7 +160,7 @@
   -o-transform: translateY(-50%);
   cursor: pointer;
   font-size: 24px;
-  background: transparent;
+  background: rgba($c-default, 0.6);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -180,7 +191,7 @@
   -o-transform: translateY(-50%);
   cursor: pointer;
   font-size: 24px;
-  background: transparent;
+  background: rgba($c-default, 0.6);
   display: inline-flex;
   align-items: center;
   justify-content: center;
