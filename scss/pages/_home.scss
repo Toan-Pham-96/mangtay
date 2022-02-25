@@ -46,6 +46,24 @@
       }
     }
   }
+  .down-infinite{
+    animation: UpDown 1s linear infinite;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #715c3f;
+    transform: translate(-50%, -50%) ;
+    -webkit-transform: translate(-50%, -50%) ;
+    -moz-transform: translate(-50%, -50%) ;
+    -ms-transform: translate(-50%, -50%) ;
+    -o-transform: translate(-50%, -50%) ;
+    a
+{
+      color: #fff;
+    }
+}
 
 }
 

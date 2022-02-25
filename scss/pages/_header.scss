@@ -3,10 +3,9 @@
   top: 0;
   width: 100%;
   z-index: 999;
-  background: transparent;
   background: url(../../assets/images/back-index.png) top center no-repeat;
   background-size: cover;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
   .heading-logo{
     position: fixed;
     top: 0;
@@ -34,7 +33,7 @@
       }
       li{
         a{
-          font-size: 2rem;
+          font-size: 1.6rem;
           font-weight: bold;
           transition: all 0.4s ease;
           -webkit-transition: all 0.4s ease;

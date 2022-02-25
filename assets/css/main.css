@@ -1073,6 +1073,14 @@ ul {
   100% {
     left: -2000px; } }
 
+@keyframes UpDown {
+  0% {
+    bottom: 0; }
+  50% {
+    bottom: .5em; }
+  100% {
+    bottom: 0; } }
+
 .dropdown:hover {
   background: transparent; }
 
@@ -1154,6 +1162,21 @@ ul {
       height: 90vh;
       width: 100%;
       object-fit: cover; }
+  .site-banner .down-infinite {
+    animation: UpDown 1s linear infinite;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #715c3f;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%); }
+    .site-banner .down-infinite a {
+      color: #fff; }
 
 .line-wrapper {
   overflow: hidden; }
@@ -1359,10 +1382,9 @@ ul {
   top: 0;
   width: 100%;
   z-index: 999;
-  background: transparent;
   background: url(../../assets/images/back-index.png) top center no-repeat;
   background-size: cover;
-  padding-bottom: 2rem; }
+  padding-bottom: 2.5rem; }
   .heading-main .heading-logo {
     position: fixed;
     top: 0;
@@ -1386,7 +1408,7 @@ ul {
       .heading-main .heading-wrapper ul li:not(:last-child) {
         margin-right: 3rem; }
       .heading-main .heading-wrapper ul li a {
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: bold;
         transition: all 0.4s ease;
         -webkit-transition: all 0.4s ease;
